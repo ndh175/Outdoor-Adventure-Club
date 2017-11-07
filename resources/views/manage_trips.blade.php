@@ -27,7 +27,10 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" name="total_spots" placeholder="Total Spots">
+                        </div>
+                        <div class="form-group col-md-6">
                             <div class="input-group mb-2 mb-sm-0">
                               <div class="input-group-addon">Will you be attending?</div>
                               <input type="text" name="is_attending" class="form-control" placeholder="Yes / No">
@@ -54,9 +57,6 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" name="total_spots" placeholder="Total Spots">
-                        </div>
                         <div class="form-group col-md-6">
                             <div class="file-upload">
                               <div class="file-select">
@@ -89,8 +89,11 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-6">
                             <input type="text" class="form-control" name="name" placeholder="New Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" name="total_spots" placeholder="New Total Spots">
                         </div>
                     </div>
                     <div class="form-row">
@@ -113,9 +116,6 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" name="total_spots" placeholder="New Total Spots">
-                        </div>
                         <div class="form-group col-md-6">
                             <div class="file-upload">
                               <div class="file-select">
