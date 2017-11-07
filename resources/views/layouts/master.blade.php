@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="{{ asset("assets/css/Registration-Form-with-Photo.css") }}">
     <link rel="stylesheet" href="{{ asset("assets/css/Search-Field-With-Icon.css") }}">
     <link rel="stylesheet" href="{{ asset("assets/css/Login-Form-Clean.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/file_picker.css") }}">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
@@ -57,6 +58,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="{{ asset("assets/js/collapsecustom.js") }}"></script>
+    <script src="{{ asset("js/file_picker.js") }}"></script>
     <script>
     $( function() {
       $( ".datepicker" ).datepicker();

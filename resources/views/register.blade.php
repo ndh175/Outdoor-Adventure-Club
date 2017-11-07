@@ -19,7 +19,14 @@
                     <input class="form-control" type="password" name="password_confirmation" placeholder="Confirm Password" style="background-color:rgb(38,38,38);color:#FFF">
                 </div>
                 <div class="form-group" style="color:#111111">
-                    <input type="file" name="image" style="color:#111111">
+                    <!--<input type="file" name="image" style="color:#111111">-->
+                    <div class="file-upload">
+                      <div class="file-select">
+                        <div class="file-select-button" id="fileName">Choose File</div>
+                        <div class="file-select-name" id="noFile">No file chosen...</div>
+                        <input type="file" name="image" id="chooseFile">
+                      </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-success outline btn-block" type="submit">Register</button>
