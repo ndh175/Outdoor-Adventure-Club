@@ -21,7 +21,7 @@
         </div>
         <div class="row people">
         @foreach ($members as $member)
-            <div class="col-md-2 col-sm-6 item"><img class="img-circle" src="{{ substr($member->image_url, 7) }}" style="width:100px;height:100px;object-fit:cover;overflow:hidden;">
+            <div class="col-md-2 col-sm-6 item"><img class="img-circle" src="{{ asset('/storage/' . substr($member->image_url, 7)) }}" style="width:100px;height:100px;object-fit:cover;overflow:hidden;">
                 <h3 class="name">{{ explode(' ', $member->name)[0] }} </h3>
                 <p class="title">{{ $member->title }} @if ($member->has_paid) <i class="fa fa-check-square-o" style="font-size:1em;color:#00cc00"></i> @endif </p>
                 <p class="description">{{ $member->date_joined }}</p>
