@@ -20,9 +20,15 @@
                     </a>
                     @endif
                 @else
+                    @if (!auth()->check())
                     <a href="{{ action("TripController@register_trip", ['id' => $trip->id]) }}">
-                        <button class="btn btn-success outline btn-block" type="submit" disabled>Register</button>
+                        <button class="btn btn-success outline btn-block" type="submit" disabled>Login To Register</button>
                     </a>
+                    @else
+                    <a href="{{ action("TripController@register_trip", ['id' => $trip->id]) }}">
+                        <button class="btn btn-success outline btn-block" type="submit" disabled>Trip Full</button>
+                    </a>
+                    @endif
                 @endif
             </div>
         </div>

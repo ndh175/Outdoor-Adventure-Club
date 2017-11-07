@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Trip;
+use App\Member;
 
 class TripController extends Controller
 {
@@ -44,7 +45,8 @@ class TripController extends Controller
             'location' => 'required',
             'price' => 'required',
             'total_spots' => 'required',
-            'image' => 'required'
+            'image' => 'required',
+            'is_attending' => 'required'
         ]);
 
         $trip = new Trip();
@@ -58,7 +60,17 @@ class TripController extends Controller
         $trip->image_url = request()->file('image')->store('public/images');
         $trip->save();
 
-        return redirect('/manage_trips');
+        if (strcasecmp('yes', request('is_attending')) == 0 || strcasecmp('y', request('is_attending')) == 0) {
+            DB::table('trip_member')->insert([
+                    'trip_id' => $trip->id,
+                    'member_id' => auth()->user()->id
+            ]);
+
+            $trip->remaining_spots--;
+            $trip->save();
+        }
+
+        return redirect('/trips');
     }
 
     public function delete($id)
@@ -85,14 +97,46 @@ class TripController extends Controller
         return redirect('/trips');
     }
 
+    public function delete_trip_link(Trip $trip, Member $member)
+    {
+        DB::table('trip_member')
+            ->where('trip_id', '=', $trip->id)
+            ->where('member_id', '=', $member->id)
+            ->delete();
+
+        $trip->remaining_spots++;
+        $trip->save();
+
+        return redirect('/manage_trips');
+    }
+
     public function update()
     {
         $trip = Trip::where('name', '=', request()->trip_selector)->first();
-        dd($trip);
-        if (request()->remaining_spots != null) {
 
+        if (request()->name != null) {
+            $trip->name = request()->name;
         }
-        $trip->remaining_spots--;
+        if (request()->location != null) {
+            $trip->location = request()->location;
+        }
+        if (request()->price != null) {
+            $trip->price = request()->price;
+        }
+        if (request()->start_date != null) {
+            $trip->start_date = request()->start_date;
+        }
+        if (request()->end_date != null) {
+            $trip->end_date = request()->end_date;
+        }
+        if (request()->total_spots != null) {
+            $trip->remaining_spots = (request()->total_spots - ($trip->total_spots - $trip->remaining_spots));
+            $trip->total_spots = request()->total_spots;
+        }
+        if (request()->image != null) {
+            $trip->image_url = request()->file('image')->store('public/images');
+        }
+
         $trip->save();
 
         return redirect('/trips');

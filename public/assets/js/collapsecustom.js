@@ -1,4 +1,4 @@
-function collapse_custom() {
+function collapsecustom() {
     jQuery('.collapse').addClass('no-transition').collapse('hide');
 }
 

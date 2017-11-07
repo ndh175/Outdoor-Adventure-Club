@@ -33,6 +33,7 @@ Route::delete('/trips/{id}', 'TripController@delete');
 Route::get('/manage_trips', 'TripController@manage');
 Route::get('/register_trip/{trip}', 'TripController@register_trip');
 Route::post('/register_trip/{trip}', 'TripController@register_trip_link');
+Route::delete('/register_trip/{trip}/{member}', 'TripController@delete_trip_link');
 Route::patch('/trips', 'TripController@update');
 
 Route::get('/login', 'AuthController@login')->name('login');

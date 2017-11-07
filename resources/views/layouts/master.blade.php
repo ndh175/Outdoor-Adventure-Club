@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @php ($url_parts = explode('/', url()->current()))
     @php ($page = end($url_parts))
-    @if ($page == 'www.outdooradventureclubatou.com') <title>Home</title> @endif
+    @if ($page == 'oac.dev') <title>Home</title> @endif
     @if ($page == 'trips') <title>Trips</title> @endif
     @if ($page == 'members') <title>Members</title> @endif
     @if ($page == 'gear_rental') <title>Gear Rental</title> @endif
@@ -50,13 +50,13 @@
 <body>
     @include ('layouts.nav')
     @yield ('content')
-    <script src="asset("assets/js/jquery.min.js") }}"></script>
-    <script src="asset("assets/bootstrap/js/bootstrap.min.js") }}"></script>
-    <script src="asset("assets/js/collapse_custom.js") }}"></script>
+    <script src="{{ asset("assets/js/jquery.min.js") }}"></script>
+    <script src="{{ asset("assets/bootstrap/js/bootstrap.min.js") }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="asset("assets/js/Simple-Slider.js") }}"></script>
+    <script src="{{ asset("assets/js/Simple-Slider.js") }}"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="{{ asset("assets/js/collapsecustom.js") }}"></script>
     <script>
     $( function() {
       $( ".datepicker" ).datepicker();
