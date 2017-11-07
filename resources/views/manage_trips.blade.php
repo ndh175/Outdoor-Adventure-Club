@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <div class="file-upload">
                               <div class="file-select">
                                 <div class="file-select-button" id="fileName">Choose File</div>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <div class="file-upload">
                               <div class="file-select">
                                 <div class="file-select-button" id="fileName">Choose File</div>
