@@ -25,7 +25,6 @@
                 <h3 class="name">{{ explode(' ', $member->name)[0] }} </h3>
                 <p class="title">{{ $member->title }} @if ($member->has_paid) <i class="fa fa-check-square-o" style="font-size:1em;color:#00cc00"></i> @endif </p>
                 <p class="description">{{ $member->date_joined }}</p>
-                <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
             </div>
         @endforeach
         </div>
