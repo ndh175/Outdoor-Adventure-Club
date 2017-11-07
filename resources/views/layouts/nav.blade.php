@@ -8,7 +8,7 @@
                 <ul class="nav navbar-nav navbar-center">
                     @php ($url_parts = explode('/', url()->current()))
                     @php ($page = end($url_parts))
-                    <li @if ($page == 'oac.dev') class="active" @endif role="presentation"><a href="/" style="font-family:Allerta, sans-serif;">Home </a></li>
+                    <li @if ($page == 'www.outdooradventureclubatou.com') class="active" @endif role="presentation"><a href="/" style="font-family:Allerta, sans-serif;">Home </a></li>
                     <li @if ($page == 'trips') class="active" @endif role="presentation"><a href="/trips" style="font-family:Allerta, sans-serif;">Trips </a></li>
                     <li @if ($page == 'members') class="active" @endif role="presentation"><a href="/members" style="font-family:Allerta, sans-serif;">Members </a></li>
                     <!--<li @if ($page == 'gallery') class="active" @endif role="presentation"><a href="/gallery" style="font-family:Allerta, sans-serif;">Gallery </a></li>-->
