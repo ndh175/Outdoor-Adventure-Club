@@ -134,7 +134,7 @@ class TripController extends Controller
             $trip->total_spots = request()->total_spots;
         }
         if (request()->image != null) {
-            $trip->image_url = request()->file('image')->store('storage/images');
+            $trip->image_url = request()->file('image')->store('/storage/images');
         }
 
         $trip->save();
