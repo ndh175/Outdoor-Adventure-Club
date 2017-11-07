@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @php ($url_parts = explode('/', url()->current()))
     @php ($page = end($url_parts))
-    @if ($page == 'oac.dev') <title>Home</title> @endif
+    @if ($page == 'www.outdooradventureclubatou.com') <title>Home</title> @endif
     @if ($page == 'trips') <title>Trips</title> @endif
     @if ($page == 'members') <title>Members</title> @endif
     @if ($page == 'gear_rental') <title>Gear Rental</title> @endif
