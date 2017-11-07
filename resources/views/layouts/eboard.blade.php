@@ -71,13 +71,13 @@
                 </div>
             </div>
             <div class="row people" style="background-color:rgb(38,38,38);padding:25px;color:rgb(255,255,255)">
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
+                <div class="col-md-6 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
                     <h3 class="name"> Tom Weddell </h3>
                     <p class="title"> Gear Manager </p>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/micheal.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
+                <div class="col-md-6 col-sm-6 item"><img class="img-circle" src="assets/img/micheal.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
                     <h3 class="name"> Grace Goodrich </h3>
                     <p class="title"> Gear Manager </p>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
