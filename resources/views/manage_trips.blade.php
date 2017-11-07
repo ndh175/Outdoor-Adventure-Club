@@ -49,14 +49,6 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control datepicker" name="start_date" placeholder="Start Date">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control datepicker" name="end_date" placeholder="End Date">
-                        </div>
-                    </div>
-                    <div class="form-row">
                         <div class="form-group col-md-12">
                             <div class="file-upload">
                               <div class="file-select">
@@ -65,6 +57,14 @@
                                 <input type="file" name="image" id="chooseFile">
                               </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control datepicker" name="start_date" placeholder="Start Date">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control datepicker" name="end_date" placeholder="End Date">
                         </div>
                     </div>
                     <div class="form-group">
@@ -108,14 +108,6 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control datepicker" name="start_date" placeholder="New Start Date">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control datepicker" name="end_date" placeholder="New End Date">
-                        </div>
-                    </div>
-                    <div class="form-row">
                         <div class="form-group col-md-12">
                             <div class="file-upload">
                               <div class="file-select">
@@ -124,6 +116,14 @@
                                 <input type="file" name="image" id="chooseFile">
                               </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control datepicker" name="start_date" placeholder="New Start Date">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control datepicker" name="end_date" placeholder="New End Date">
                         </div>
                     </div>
                     <div class="form-group">
