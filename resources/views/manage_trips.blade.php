@@ -58,7 +58,13 @@
                             <input type="text" class="form-control" name="total_spots" placeholder="Total Spots">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="file" name="image" style="color:#111111">
+                            <div class="file-upload">
+                              <div class="file-select">
+                                <div class="file-select-button" id="fileName">Choose File</div>
+                                <div class="file-select-name" id="noFile">No file chosen...</div>
+                                <input type="file" name="image" id="chooseFile">
+                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -111,7 +117,13 @@
                             <input type="text" class="form-control" name="total_spots" placeholder="New Total Spots">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="file" name="image" style="color:#111111">
+                            <div class="file-upload">
+                              <div class="file-select">
+                                <div class="file-select-button" id="fileName">Choose File</div>
+                                <div class="file-select-name" id="noFile">No file chosen...</div>
+                                <input type="file" name="image" id="chooseFile">
+                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">

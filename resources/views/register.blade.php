@@ -19,7 +19,6 @@
                     <input class="form-control" type="password" name="password_confirmation" placeholder="Confirm Password" style="background-color:rgb(38,38,38);color:#FFF">
                 </div>
                 <div class="form-group" style="color:#111111">
-                    <!--<input type="file" name="image" style="color:#111111">-->
                     <div class="file-upload">
                       <div class="file-select">
                         <div class="file-select-button" id="fileName">Choose File</div>
