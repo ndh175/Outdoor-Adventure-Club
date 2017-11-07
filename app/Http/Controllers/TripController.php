@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Trip;
 use App\Member;
-use App\Image;
 
 class TripController extends Controller
 {
@@ -135,14 +134,7 @@ class TripController extends Controller
             $trip->total_spots = request()->total_spots;
         }
         if (request()->image != null) {
-            //$trip->image_url = request()->file('image')->store('/images');
-            $name = Input::file('image')->getClientOriginalName();
-            Input::file('image')->move('images', $name.rand(4,10).'.jpg');
-            $imagedata = array (
-                'name'=> $name,
-                'url'=> $name
-            );
-            $trip->image_url = Image::insertImage($imagedata);
+            $trip->image_url = request()->file('image')->store('/images');
         }
 
         $trip->save();
