@@ -22,7 +22,7 @@ class TripController extends Controller
             $date_parts = explode('/', $trip);
             $val = ($date_parts[0] * 30);
             $val += $date_parts[1];
-            $val += $date_parts[2] * 356;
+            $val += $date_parts[2] * 365;
             return $val;
         })->reverse();
         if (auth()->check()) {
