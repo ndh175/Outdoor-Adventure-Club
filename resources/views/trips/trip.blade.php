@@ -1,7 +1,7 @@
 <div class="highlight-phone" style="background-color:rgb(255,255,255);">
     <div class="container">
         <div class="row" style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
-            <div class="col-md-7"><img class="img-rounded img-responsive" src="{{ asset('/storage/' . substr($trip->image_url, 7)) }}" style="height:300px;object-fit:cover;overflow:hidden;"></div>
+            <div class="col-md-7"><img class="img-rounded img-responsive" src="{{ asset('/storage/' . substr($trip->image_url, 7)) }}" style="height:400px;object-fit:cover;overflow:hidden;"></div>
             <div class="col-md-1"></div>
             <div class="col-md-4" style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
                 <h2 class="text-center" style="font-family:Allerta, sans-serif;color:rgb(255,255,255);">{{ $trip->name }}</h2>
