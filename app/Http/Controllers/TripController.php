@@ -19,7 +19,11 @@ class TripController extends Controller
     public function index()
     {
         $trips = Trip::all()->sortBy(function ($trip) {
-            return $trip->start_date;
+            $date_parts = explode('/', $trip);
+            $val = ($date_parts[0] * 30);
+            $val += $date_parts[1];
+            $val += $date_parts[2] * 356;
+            return $val;
         })->reverse();
         if (auth()->check()) {
             $user_trips = DB::table('trip_member')
