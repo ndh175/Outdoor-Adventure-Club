@@ -9,7 +9,7 @@
             </div>
         </div>
         @include ('layouts.eboard_info')
-        <div style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;color:rgb(255,255,255)">
+        <div style="background-color:rgb(38,38,38);padding:40px;border-radius:10px;color:rgb(255,255,255)">
             <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
                 <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
                     <h3 class="name"> Jacquelyn Tindall </h3>
