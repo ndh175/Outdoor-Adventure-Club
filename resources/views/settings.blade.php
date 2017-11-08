@@ -44,7 +44,7 @@
                         <div class="form-group col-md-12">
                             <div class="file-upload2">
                               <div class="file-select2">
-                                <div class="file-select-button2" id="fileName2">Choose File</div>
+                                <div class="file-select-button2" id="fileName2">New Profile Picture</div>
                                 <div class="file-select-name2" id="noFile2">No file chosen...</div>
                                 <input type="file" name="image" id="chooseFile2">
                               </div>
