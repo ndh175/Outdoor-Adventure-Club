@@ -18,7 +18,9 @@ class TripController extends Controller
 
     public function index()
     {
-        $trips = Trip::all()->sortBy('start_date')->reverse();
+        $trips = Trip::all()->sortBy(function ($product, $key) {
+            return $product;
+        })->reverse();
         if (auth()->check()) {
             $user_trips = DB::table('trip_member')
                 ->join('members', 'trip_member.member_id', '=', 'members.id')
