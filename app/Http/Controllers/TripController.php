@@ -30,7 +30,7 @@ class TripController extends Controller
             $val = ($date_parts[0] * 30);
             $val += $date_parts[1];
             $val += $date_parts[2] * 365;
-            $current = ((date('Y') * 365) + date('z'));
+            $current = (((int)date('Y') * 365) + (int)date('z'));
             return ($val > $current);
         });
         $past_trips = $trips->filter(function($trip){
@@ -38,7 +38,7 @@ class TripController extends Controller
             $val = ($date_parts[0] * 30);
             $val += $date_parts[1];
             $val += $date_parts[2] * 365;
-            $current = ((date('Y') * 365) + date('z'));
+            $current = ((int)(date('Y') * 365) + (int)date('z'));
             return ($val < $current);
         });
         if (auth()->check()) {
