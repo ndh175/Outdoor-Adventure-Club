@@ -51,7 +51,7 @@
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
                 </div>
                 <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/luis.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> " " </h3>
+                    <h3 class="name"> <p> </p></h3>
                     <p class="title"> Creative Director </p>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
                 </div>
