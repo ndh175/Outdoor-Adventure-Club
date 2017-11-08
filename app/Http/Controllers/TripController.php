@@ -55,7 +55,13 @@ class TripController extends Controller
 
     public function manage()
     {
-        $trips = Trip::all()->sortBy('start_date')->reverse();
+        $trips = Trip::all()->sortBy(function ($trip) {
+            $date_parts = explode('/', $trip->start_date);
+            $val = ($date_parts[0] * 30);
+            $val += $date_parts[1];
+            $val += $date_parts[2] * 365;
+            return $val;
+        })->reverse();
         return view('manage_trips', compact('trips'));
     }
 
