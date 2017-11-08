@@ -21,7 +21,7 @@ class MemberController extends Controller
 
     public function manage()
     {
-        $members = Member::all();
+        $members = Member::all()->orderBy('created_at', 'desc');
         return view('manage_members', compact('members'));
     }
 
