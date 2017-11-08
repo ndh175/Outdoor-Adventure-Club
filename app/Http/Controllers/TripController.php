@@ -18,7 +18,7 @@ class TripController extends Controller
 
     public function index()
     {
-        $trips = Trip::all()->sortBy(function ($trip) {
+        $trips = Trip::sortBy(function ($trip) {
             $date_parts = explode('/', $trip->start_date);
             $val = ($date_parts[0] * 30);
             $val += $date_parts[1];
