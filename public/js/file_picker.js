@@ -14,10 +14,10 @@ $('#chooseFile2').bind('change', function () {
   var filename = $("#chooseFile2").val();
   if (/^\s*$/.test(filename)) {
     $(".file-upload").removeClass('active');
-    $("#noFile").text("No file chosen...");
+    $("#noFile2").text("No file chosen...");
   }
   else {
     $(".file-upload").addClass('active');
-    $("#noFile").text(filename.replace("C:\\fakepath\\", ""));
+    $("#noFile2").text(filename.replace("C:\\fakepath\\", ""));
   }
 });

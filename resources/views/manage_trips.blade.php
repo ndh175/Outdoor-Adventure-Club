@@ -111,8 +111,8 @@
                         <div class="form-group col-md-12">
                             <div class="file-upload">
                               <div class="file-select">
-                                <div class="file-select-button" id="fileName">Choose File</div>
-                                <div class="file-select-name" id="noFile">No file chosen...</div>
+                                <div class="file-select-button" id="fileName2">Choose File</div>
+                                <div class="file-select-name" id="noFile2">No file chosen...</div>
                                 <input type="file" name="image" id="chooseFile2">
                               </div>
                             </div>
