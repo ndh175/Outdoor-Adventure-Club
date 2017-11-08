@@ -5,7 +5,7 @@ use App\Member;
 use App\Trip;
 
 Route::get('/', function () {
-    $members = Member::all()->reverse()->take(6);
+    $members = Member::all()->sortBy('created_at')->reverse()->take(6);
     $trip = Trip::all()->sortBy('start_date')->last();
     if (auth()->check()) {
         $user_trips = DB::table('trip_member')

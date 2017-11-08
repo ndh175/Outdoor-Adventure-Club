@@ -15,13 +15,13 @@ class MemberController extends Controller
 
     public function index()
     {
-        $members = Member::all();
+        $members = Member::all()->sortBy('created_at')
         return view('members', compact('members'));
     }
 
     public function manage()
     {
-        $members = Member::all()->orderBy('created_at', 'desc');
+        $members = Member::all()->sortBy('created_at');
         return view('manage_members', compact('members'));
     }
 
