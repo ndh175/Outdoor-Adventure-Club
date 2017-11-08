@@ -6,6 +6,14 @@ use App\Trip;
 
 Route::get('/', function () {
     $members = Member::all()->sortBy('created_at')->reverse()->take(6);
+    $trip = Trip::all()->sortBy('start_date')->last();
+    $trips = Trip::all()->sortBy(function ($trip) {
+        $date_parts = explode('/', $trip->start_date);
+        $val = ($date_parts[0] * 30);
+        $val += $date_parts[1];
+        $val += $date_parts[2] * 365;
+        return $val;
+    })->reverse();
     $trip = $trips->filter(function($trip){
         $date_parts = explode('/', $trip->start_date);
         $val = date('z', mktime(0,0,0,$date_parts[0],$date_parts[1],$date_parts[2]));
