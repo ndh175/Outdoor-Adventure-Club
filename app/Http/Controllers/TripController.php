@@ -27,8 +27,7 @@ class TripController extends Controller
         })->reverse();
         $future_trips = $trips->filter(function($trip){
             $date_parts = explode('/', $trip->start_date);
-            $val = ($date_parts[0] * 30);
-            $val += $date_parts[1];
+            $val = date('z', mktime(0,0,0,$date_parts[0],$date_parts[1],$date_parts[2]));
             $val += $date_parts[2] * 365;
             $current = (((int)date('Y') * 365) + (int)date('z'));
             return ($val > $current);
