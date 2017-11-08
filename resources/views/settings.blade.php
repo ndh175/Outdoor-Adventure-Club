@@ -9,16 +9,15 @@
                     <p> </p>
                 </div>
                 <div class="col-md-10">
-                    <h2 class="text-center" style="padding-top:20px;margin-bottom:20px;">Manage Trips</h2></div>
+                    <h2 class="text-center" style="padding-top:20px;margin-bottom:20px;">Settings</h2></div>
                 <div class="col-md-1">
                     <p> </p>
                 </div>
             </div>
         </div>
         <div class="row people">
-            <!--Edit Trips-->
+            <div class="col-md-3 item"></div>
             <div class="col-md-6 item">
-                <h3 class="name">Edit Trip</h3>
                 <form method="POST" action="/trips" enctype="multipart/form-data">
                     <input name="_method" type="hidden" value="PATCH">
                     {{ csrf_field() }}
@@ -65,6 +64,7 @@
                     </div>
                 </form>
             </div>
+            <div class="col-md-3 item"></div>
         </div>
     </div>
 </div>
