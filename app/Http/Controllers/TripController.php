@@ -41,6 +41,7 @@ class TripController extends Controller
             $current = ((int)(date('Y') * 365) + (int)date('z'));
             echo($current . '|');
             echo ($val);
+            echo ('\n');
             return ($val < $current);
         })->all();
         if (auth()->check()) {
