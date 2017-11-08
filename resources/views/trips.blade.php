@@ -1,7 +1,10 @@
 @extends ('layouts.master')
 
 @section('content')
-@foreach ($trips as $trip)
+@foreach ($future_trips as $trip)
+    @include ('trips.trip')
+@endforeach
+@foreach ($past_trips as $trip)
     @include ('trips.trip')
 @endforeach
 <div style="height:40px"></div>

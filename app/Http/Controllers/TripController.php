@@ -25,15 +25,31 @@ class TripController extends Controller
             $val += $date_parts[2] * 365;
             return $val;
         })->reverse();
+        $future_trips = $trips->filter(function($trip){
+            $date_parts = explode('/', $trip->start_date);
+            $val = ($date_parts[0] * 30);
+            $val += $date_parts[1];
+            $val += $date_parts[2] * 365;
+            $current = ((date(Y) * 365) + date(z));
+            return $val > $current;
+        })->all();
+        $past_trips = $trips->filter(function($trip){
+            $date_parts = explode('/', $trip->start_date);
+            $val = ($date_parts[0] * 30);
+            $val += $date_parts[1];
+            $val += $date_parts[2] * 365;
+            $current = ((date(Y) * 365) + date(z));
+            return $val < $current;
+        })->all();
         if (auth()->check()) {
             $user_trips = DB::table('trip_member')
                 ->join('members', 'trip_member.member_id', '=', 'members.id')
                 ->where('members.id', '=', auth()->user()->id)
                 ->select('trip_id')
                 ->get();
-            return view('trips', compact('trips', 'user_trips'));
+            return view('trips', compact('trips', 'future_trips', 'past_trips', 'user_trips'));
         }
-        return view('trips', compact('trips'));
+        return view('trips', compact('trips', 'future_trips', 'past_trips'));
     }
 
     public function manage()
