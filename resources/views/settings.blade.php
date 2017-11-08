@@ -22,22 +22,21 @@
                     <input name="_method" type="hidden" value="PATCH">
                     {{ csrf_field() }}
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
+                            <div class="input-group-addon">Display Name</div>
                             <input type="text" class="form-control" name="name" placeholder="New Name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" name="total_spots" placeholder="New Total Spots">
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" name="location" placeholder="New Location">
+                        <div class="form-group col-md-12">
+                            <div class="input-group-addon">Email</div>
+                            <input type="text" class="form-control" name="name" placeholder="New Name">
                         </div>
-                        <div class="form-group col-md-6">
-                            <div class="input-group mb-2 mb-sm-0">
-                              <div class="input-group-addon">$</div>
-                              <input type="text" name="price" class="form-control" id="inlineFormInputGroupUsername" placeholder="New Price">
-                            </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <div class="input-group-addon">Password</div>
+                            <input type="text" class="form-control" name="name" placeholder="New Name">
                         </div>
                     </div>
                     <div class="form-row">
@@ -51,16 +50,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control datepicker" name="start_date" placeholder="New Start Date">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control datepicker" name="end_date" placeholder="New End Date">
-                        </div>
-                    </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-success btn-block outline">Edit Trip</button>
+                        <button type="submit" class="btn btn-success btn-block outline">Update Settings</button>
                     </div>
                 </form>
             </div>
