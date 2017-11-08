@@ -10,7 +10,7 @@
         </div>
         @include ('layouts.eboard_info')
         <div style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;color:rgb(255,255,255)">
-            <div class="row people" style="background-color:rgb(38,38,38);padding:25px;color:rgb(255,255,255)">
+            <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
                 <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
                     <h3 class="name"> Jacquelyn Tindall </h3>
                     <p class="title"> Vice President </p>
@@ -30,7 +30,7 @@
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
             </div>
-            <div class="row people" style="background-color:rgb(38,38,38);padding:25px;color:rgb(255,255,255)">
+            <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
                 <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
                     <h3 class="name"> Jannah Metcalfe </h3>
                     <p class="title"> Secretary </p>
@@ -50,7 +50,7 @@
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
             </div>
-            <div class="row people" style="background-color:rgb(38,38,38);padding:25px;color:rgb(255,255,255)">
+            <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
                 <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
                     <h3 class="name"> Olivia Duffton </h3>
                     <p class="title"> Fundraising </p>
@@ -70,7 +70,7 @@
                     <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                 </div>
             </div>
-            <div class="row people" style="background-color:rgb(38,38,38);padding:25px;color:rgb(255,255,255)">
+            <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
                 <div class="col-md-2 item"></div>
                 <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
                     <h3 class="name"> Tom Weddell </h3>
