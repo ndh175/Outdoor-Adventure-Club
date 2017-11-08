@@ -18,8 +18,8 @@ class TripController extends Controller
 
     public function index()
     {
-        $trips = Trip::all()->sortBy(function ($product, $key) {
-            return $product;
+        $trips = Trip::all()->sortBy(function ($trip) {
+            return $trip->start_date;
         })->reverse();
         if (auth()->check()) {
             $user_trips = DB::table('trip_member')
