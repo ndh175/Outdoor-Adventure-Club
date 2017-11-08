@@ -13,11 +13,11 @@ $('#chooseFile').bind('change', function () {
 $('#chooseFile2').bind('change', function () {
   var filename2 = $("#chooseFile2").val();
   if (/^\s*$/.test(filename2)) {
-    $(".file-upload").removeClass('active');
+    $(".file-upload2").removeClass('active');
     $("#noFile2").text("No file chosen...");
   }
   else {
-    $(".file-upload").addClass('active');
+    $(".file-upload2").addClass('active');
     $("#noFile2").text(filename2.replace("C:\\fakepath\\", ""));
   }
 });
