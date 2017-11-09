@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row people" style="padding-bottom:20px;">
             <div class="col-md-4 col-sm-6 item">
-                <a href="#backpacks" class="toggle" data-toggle="collapse" aria-expanded="false" aria-controls="backpacks"><img src="assets/img/backpack.png"></a>
+                <a href="#backpacks"  type="button" data-toggle="modal" data-target="#tents"><img src="assets/img/backpack.png"></a>
                 <h3 class="name">Backpacks </h3>
                 <p class="title">1 / 10 Avaiable</p>
             </div>

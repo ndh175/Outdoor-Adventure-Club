@@ -143,7 +143,7 @@
                     <div class="form-row">
                         <div class="form-group form-check col-md-12">
                             <div class="input-group">
-                                <input type="text" class="form-control"placeholder="{{ $trip->name }}" readonly>
+                                <input type="text" class="form-control" placeholder="{{ $trip->name }}" readonly>
                                 <span class="input-group-btn">
                                   <button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#confirm{{ $trip->id }}">Delete Trip</button>
                                 </span>
