@@ -59,6 +59,7 @@ Route::get('/logout', 'AuthController@destroy');
 
 Route::get('/gear_rental', 'GearController@index');
 Route::get('/manage_gear', 'GearController@manage');
+Route::post('/gear', 'GearController@store');
 
 Route::get('/settings', 'SettingsController@index');
 

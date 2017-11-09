@@ -19,7 +19,7 @@
             <!--Add Trips-->
             <div class="col-md-6 item">
                 <h3 class="name">Add Gear</h3>
-                <form method="POST" action="/trips" enctype="multipart/form-data">
+                <form method="POST" action="/gear" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="form-row">
                         <div class="form-group col-md-12">
