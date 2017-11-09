@@ -13,25 +13,9 @@
     <div class="container">
         <div class="row people" style="padding-bottom:20px;">
             <div class="col-md-4 col-sm-6 item">
-                <a href="#backpacks"  type="button" data-toggle="modal" data-target="#tents"><img src="assets/img/backpack.png"></a>
+                <a href="#backpacks" class="toggle" data-toggle="collapse" aria-expanded="false" aria-controls="backpacks"><img src="assets/img/backpack.png"></a>
                 <h3 class="name">Backpacks </h3>
                 <p class="title">1 / 10 Avaiable</p>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="tents" tabindex="-1" role="dialog" aria-labelledby="tents_label" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="tents_label">Avaiable Tents:</h5>
-                  </div>
-                  <div class="modal-body">
-
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div class="col-md-4 col-sm-6 item">
