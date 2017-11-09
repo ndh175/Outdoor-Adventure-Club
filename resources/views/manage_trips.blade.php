@@ -80,7 +80,7 @@
                     <input name="_method" type="hidden" value="PATCH">
                     {{ csrf_field() }}
                     <div class="form-row">
-                        <div class="form-group">
+                        <div class="form-group  col-md-12">
                             <select class="form-control" name="trip_selector">
                               @foreach ($trips as $trip)
                                   <option>{{ $trip->name }}</option>
