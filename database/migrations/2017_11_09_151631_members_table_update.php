@@ -13,9 +13,13 @@ class MembersTableUpdate extends Migration
      */
     public function up()
     {
-        Schema::create('members', function (Blueprint $table) {
-            $table->text('bio')->nullable($value = true);
-        });
+        if ( ! Schema::hasColumn('members', 'bio'))
+        {
+            Schema::table('members', function($table)
+            {
+                $table->text('bio')->nullable($value = true);
+            });
+        }
     }
 
     /**
