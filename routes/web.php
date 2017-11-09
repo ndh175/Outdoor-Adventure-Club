@@ -37,7 +37,7 @@ Route::redirect('/home', '/')->name('home');
 Route::get('/members', 'MemberController@index');
 Route::get('/manage_members', 'MemberController@manage');
 Route::patch('/members/has_paid/{id}', 'MemberController@update_has_paid');
-Route::patch('')
+Route::patch('/members/{id}', 'MemberController@update');
 Route::get('/manage_eboard', 'MemberController@manage_eboard');
 Route::patch('/manage_members/rank/{id}', 'MemberController@update_rank');
 Route::patch('/manage_members/title/{id}', 'MemberController@update_title');

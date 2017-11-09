@@ -39,6 +39,12 @@ class MemberController extends Controller
         return redirect('/manage_members');
     }
 
+    public function update($id)
+    {
+        $member = Member::find($id);
+        return redirect('/members');
+    }
+
     public function update_title($id)
     {
         $member = Member::find($id);
