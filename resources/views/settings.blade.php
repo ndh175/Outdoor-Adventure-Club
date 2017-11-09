@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="text" class="form-control" name="password" placeholder="New Bio">
+                            <textarea type="text" class="form-control" name="password" placeholder="New Bio">
                         </div>
                     </div>
                     <div class="form-row">
