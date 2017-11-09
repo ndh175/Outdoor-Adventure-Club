@@ -44,7 +44,7 @@ class MemberController extends Controller
         $member = Member::find($id);
 
         if (request()->name != null) {
-            $member->name = request()->end_date;
+            $member->name = request()->name;
         }
         if (request()->password != null) {
             $member->password = bcrypt(request('password'));

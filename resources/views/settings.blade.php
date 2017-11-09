@@ -28,7 +28,7 @@
                                 <input type="text" class="form-control" name="name" placeholder="New Name">
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <div class="input-group mb-2 mb-sm-0">
