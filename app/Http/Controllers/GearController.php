@@ -31,8 +31,9 @@ class GearController extends Controller
         ]);
 
         $gear = new Gear();
-        $gear->item = request()->item;
-        $gear->quantity = request()->quantity;
+        $gear->name = request()->item;
+        $gear->total_avaiable = request()->quantity;
+        $gear->current_avaiable = request()->quantity;
         $gear->category = request()->category;
         $gear->save();
 
