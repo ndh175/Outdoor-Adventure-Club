@@ -42,6 +42,19 @@ class MemberController extends Controller
     public function update($id)
     {
         $member = Member::find($id);
+
+        if (request()->name != null) {
+            $member->name = request()->end_date;
+        }
+        if (request()->password != null) {
+            $member->password = bcrypt(request('password'));
+        }
+        if (request()->image != null) {
+            $member->image_url = request()->file('image')->store('public/profile_pics');
+        }
+
+        $member->save();
+
         return redirect('/members');
     }
 
