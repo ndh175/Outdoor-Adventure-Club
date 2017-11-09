@@ -27,12 +27,12 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <input type="text" class="form-control" name="quantity" placeholder="Quantity">
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group">
+                        <div class="form-group col-md-12">
                             <select class="form-control" name="category">
                                 <option>Cooking Utensils</option>
                                 <option>Expendable</option>
