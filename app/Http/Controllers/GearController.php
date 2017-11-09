@@ -14,7 +14,9 @@ class GearController extends Controller
 
     public function index()
     {
-        return view('gear_rental');
+        $cooking_utensils = Gear::whereIn('category', 'Cooking Utensils')->get();
+        $tents = Gear::whereIn('category', 'Tents')->get();
+        return view('gear_rental', compact('cooking_utensils', 'tents'));
     }
 
     public function manage()

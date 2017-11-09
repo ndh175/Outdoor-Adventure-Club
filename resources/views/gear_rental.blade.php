@@ -111,22 +111,19 @@
         <div class="row people collapse" id="other"  style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
             <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
             <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
-                <h3 class="text-nowrap name" style="color:rgb(249,250,251);margin-top:40px;height:30px;">Jetboil </h3>
-                <h3 class="text-nowrap name" style="color:rgb(255,255,255);margin-top:40px;height:30px;">Jetboil </h3>
-                <h3 class="text-nowrap name" style="color:rgb(252,254,255);margin-top:40px;height:30px;">MSR PocketRocket</h3>
-                <h3 class="text-nowrap name" style="color:rgb(252,254,255);margin-top:40px;height:30px;">MSR PocketRocket</h3>
-                <h3 class="text-nowrap name" style="color:rgb(125,130,133);margin-top:40px;height:30px;"><span style="text-decoration: line-through;">MSR PocketRocket</span></h3>
-                <h3 class="text-nowrap name" style="color:rgb(125,130,133);margin-top:40px;height:30px;"><span style="text-decoration: line-through;">Jetboil</span> </h3></div>
+                @foreach ($tents as $tent)
+                <h3 class="text-nowrap name" style="color:rgb(249,250,251);margin-top:40px;height:30px;">{{ $tent->name }}</h3>
+                @endforeach
+            </div>
             <div class="col-md-4" style="padding-right:0px;padding-left:0px;">
-                <h3 class="text-center name" style="color:rgb(252,253,254);margin-top:20px;margin-bottom:20px;"> </h3>
-                <h3 class="text-center name" style="color:rgb(250,252,254);margin-top:20px;margin-bottom:20px;"> </h3>
-                <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3>
-                <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3></div>
+                @foreach ($tents as $tent)
+                    <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3>
+                @endforeach
+            </div>
             <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
-                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
-                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
-                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
-                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                @foreach ($tents as $tent)
+                    <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                @endforeach
             </div>
             <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
         </div>
