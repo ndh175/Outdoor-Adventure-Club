@@ -31,10 +31,10 @@ class GearController extends Controller
         ]);
 
         $gear = new Gear();
-        $gear->item = request('item');
-        $gear->item = request('item');
-        $gear->item = request('item');
-        $gear(save);
+        $gear->item = request()->item;
+        $gear->quantity = request()->quantity;
+        $gear->category = request()->category;
+        $gear->save();
 
         return redirect('/manage_gear');
     }
