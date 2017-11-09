@@ -18,7 +18,7 @@
         <div class="row people">
             <div class="col-md-3 item"></div>
             <div class="col-md-6 item">
-                <form method="POST" action="/members" enctype="multipart/form-data">
+                <form method="POST" action="/members/{{ auth()->user()->id }}" enctype="multipart/form-data">
                     <input name="_method" type="hidden" value="PATCH">
                     {{ csrf_field() }}
                     <div class="form-row">
@@ -28,7 +28,7 @@
                                 <input type="text" class="form-control" name="name" placeholder="New Name">
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <div class="input-group mb-2 mb-sm-0">
