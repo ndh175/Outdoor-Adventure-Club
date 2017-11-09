@@ -82,9 +82,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <select class="form-control" name="trip_selector">
-                              @foreach ($trips as $trip)
-                                  <option>{{ $trip->name }}</option>
-                              @endforeach
+
                             </select>
                         </div>
                     </div>
@@ -136,88 +134,12 @@
             <!--Remove Trips-->
             <div class="col-md-6 item">
                 <h3 class="name">Remove Gear</h3>
-                @foreach ($trips as $trip)
-                <form method="POST" action="/trips/{{ $trip->id }}">
-                    <input name="_method" type="hidden" value="DELETE">
-                    {{ csrf_field() }}
-                    <div class="form-row">
-                        <div class="form-group form-check col-md-12">
-                            <div class="input-group">
-                                <input type="text" class="form-control"placeholder="{{ $trip->name }}" readonly>
-                                <span class="input-group-btn">
-                                  <button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#confirm{{ $trip->id }}">Delete Trip</button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="confirm{{ $trip->id }}" tabindex="-1" role="dialog" aria-labelledby="modal_label{{ $trip->id }}" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="modal_label{{ $trip->id }}">Are you sure you want to delete:</h5>
-                          </div>
-                          <div class="modal-body">
-                            {{ $trip->name }}
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </form>
-                @endforeach
+
             </div>
             <!--Show Trip Attendees-->
             <div class="col-md-6 item">
                 <h3 class="name">Gear Status</h3>
-                @foreach ($trips as $trip)
-                    <div class="form-row">
-                        <div class="form-group form-check col-md-12">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="{{ $trip->name }}" readonly>
-                                @if ($trip->members()->count() != 0)
-                                <span class="input-group-btn">
-                                  <button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#attendees{{ $trip->id }}">View Attendees</button>
-                                </span>
-                                @else
-                                <span class="input-group-addon"><strong>No Trip Attendees</strong></span>
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="attendees{{ $trip->id }}" tabindex="-1" role="dialog" aria-labelledby="attendees_modal_label{{ $trip->id }}" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="attendees_modal_label{{ $trip->id }}">{{ $trip->name}} Attendees ({{ $trip->total_spots - $trip->remaining_spots }} / {{ $trip->total_spots }}):</h5>
-                          </div>
-                          <div class="modal-body">
-                              @foreach ($trip->members() as $member)
-                                  <form method="POST" action="/register_trip/{{ $trip->id }}/{{ $member->member_id }}">
-                                      <input name="_method" type="hidden" value="DELETE">
-                                      {{ csrf_field() }}
-                                      <div class="form-group">
-                                          <div class="input-group">
-                                              <input type="text" class="form-control" placeholder="{{ App\Member::find($member->member_id)->name }}" readonly>
-                                              <span class="input-group-btn">
-                                                <button class="btn btn-danger btn-sm" type="submit" data-toggle="modal" data-target="#attendees{{ $trip->id }}">Kick</button>
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </form>
-                              @endforeach
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                @endforeach
+
             </div>
         </div>
     </div>
