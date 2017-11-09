@@ -25,7 +25,6 @@
                     <h5 class="modal-title" id="tents_label">Are you sure you want to delete:</h5>
                   </div>
                   <div class="modal-body">
-                    {{ $trip->name }}
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Close</button>
