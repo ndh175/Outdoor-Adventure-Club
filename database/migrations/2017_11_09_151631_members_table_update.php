@@ -15,7 +15,7 @@ class MembersTableUpdate extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->text('bio')->nullable($value = true);
-        }
+        });
     }
 
     /**
