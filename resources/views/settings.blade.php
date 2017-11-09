@@ -24,7 +24,6 @@
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <div class="input-group mb-2 mb-sm-0">
-                                <div class="input-group-addon">Display Name</div>
                                 <input type="text" class="form-control" name="name" placeholder="New Name">
                             </div>
                         </div>
@@ -32,8 +31,14 @@
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <div class="input-group mb-2 mb-sm-0">
-                                <div class="input-group-addon">Password</div>
                                 <input type="text" class="form-control" name="password" placeholder="New Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <div class="input-group mb-2 mb-sm-0">
+                                <input type="text" class="form-control" name="password" placeholder="New Bio">
                             </div>
                         </div>
                     </div>
