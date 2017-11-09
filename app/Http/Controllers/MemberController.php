@@ -52,6 +52,9 @@ class MemberController extends Controller
         if (request()->image != null) {
             $member->image_url = request()->file('image')->store('public/profile_pics');
         }
+        if (request()->bio != null) {
+            $member->bio = request()->bio;
+        }
 
         $member->save();
 
