@@ -23,23 +23,17 @@
                     {{ csrf_field() }}
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <div class="input-group mb-2 mb-sm-0">
-                                <input type="text" class="form-control" name="name" placeholder="New Name">
-                            </div>
+                            <input type="text" class="form-control" name="name" placeholder="New Name">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <div class="input-group mb-2 mb-sm-0">
-                                <input type="text" class="form-control" name="password" placeholder="New Password">
-                            </div>
+                            <input type="text" class="form-control" name="password" placeholder="New Password">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <div class="input-group mb-2 mb-sm-0">
-                                <input type="text" class="form-control" name="password" placeholder="New Bio">
-                            </div>
+                            <input type="text" class="form-control" name="password" placeholder="New Bio">
                         </div>
                     </div>
                     <div class="form-row">
