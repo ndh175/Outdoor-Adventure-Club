@@ -28,7 +28,8 @@
                 <p class="title">1 / 10 Avaiable</p>
             </div>
         </div>
-        <div class="row people collapse" id="backpacks"  style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
+        <!--Tents Section-->
+        <div class="row people collapse" id="tents"  style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
             <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
             <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
                 <h3 class="text-nowrap name" style="color:rgb(249,250,251);margin-top:40px;height:30px;">Osprey Volt 75L </h3>
@@ -46,7 +47,31 @@
             </div>
             <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
         </div>
+        <!--Cooking Section-->
         <div class="row people collapse" id="cooking"  style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
+            <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
+            <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
+                <h3 class="text-nowrap name" style="color:rgb(249,250,251);margin-top:40px;height:30px;">Jetboil </h3>
+                <h3 class="text-nowrap name" style="color:rgb(255,255,255);margin-top:40px;height:30px;">Jetboil </h3>
+                <h3 class="text-nowrap name" style="color:rgb(252,254,255);margin-top:40px;height:30px;">MSR PocketRocket</h3>
+                <h3 class="text-nowrap name" style="color:rgb(252,254,255);margin-top:40px;height:30px;">MSR PocketRocket</h3>
+                <h3 class="text-nowrap name" style="color:rgb(125,130,133);margin-top:40px;height:30px;"><span style="text-decoration: line-through;">MSR PocketRocket</span></h3>
+                <h3 class="text-nowrap name" style="color:rgb(125,130,133);margin-top:40px;height:30px;"><span style="text-decoration: line-through;">Jetboil</span> </h3></div>
+            <div class="col-md-4" style="padding-right:0px;padding-left:0px;">
+                <h3 class="text-center name" style="color:rgb(252,253,254);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(250,252,254);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3></div>
+            <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+            </div>
+            <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
+        </div>
+        <!--Food Section-->
+        <div class="row people collapse" id="food"  style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
             <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
             <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
                 <h3 class="text-nowrap name" style="color:rgb(249,250,251);margin-top:40px;height:30px;">Jetboil </h3>
@@ -81,6 +106,52 @@
                 <p class="title">1 / 10 Avaiable</p>
             </div>
             <div class="col-md-2 item"></div>
+        </div>
+        <!--Other Section-->
+        <div class="row people collapse" id="other"  style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
+            <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
+            <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
+                <h3 class="text-nowrap name" style="color:rgb(249,250,251);margin-top:40px;height:30px;">Jetboil </h3>
+                <h3 class="text-nowrap name" style="color:rgb(255,255,255);margin-top:40px;height:30px;">Jetboil </h3>
+                <h3 class="text-nowrap name" style="color:rgb(252,254,255);margin-top:40px;height:30px;">MSR PocketRocket</h3>
+                <h3 class="text-nowrap name" style="color:rgb(252,254,255);margin-top:40px;height:30px;">MSR PocketRocket</h3>
+                <h3 class="text-nowrap name" style="color:rgb(125,130,133);margin-top:40px;height:30px;"><span style="text-decoration: line-through;">MSR PocketRocket</span></h3>
+                <h3 class="text-nowrap name" style="color:rgb(125,130,133);margin-top:40px;height:30px;"><span style="text-decoration: line-through;">Jetboil</span> </h3></div>
+            <div class="col-md-4" style="padding-right:0px;padding-left:0px;">
+                <h3 class="text-center name" style="color:rgb(252,253,254);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(250,252,254);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3></div>
+            <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+            </div>
+            <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
+        </div>
+        <!--Expendable Section-->
+        <div class="row people collapse" id="expendable"  style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
+            <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
+            <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
+                <h3 class="text-nowrap name" style="color:rgb(249,250,251);margin-top:40px;height:30px;">Jetboil </h3>
+                <h3 class="text-nowrap name" style="color:rgb(255,255,255);margin-top:40px;height:30px;">Jetboil </h3>
+                <h3 class="text-nowrap name" style="color:rgb(252,254,255);margin-top:40px;height:30px;">MSR PocketRocket</h3>
+                <h3 class="text-nowrap name" style="color:rgb(252,254,255);margin-top:40px;height:30px;">MSR PocketRocket</h3>
+                <h3 class="text-nowrap name" style="color:rgb(125,130,133);margin-top:40px;height:30px;"><span style="text-decoration: line-through;">MSR PocketRocket</span></h3>
+                <h3 class="text-nowrap name" style="color:rgb(125,130,133);margin-top:40px;height:30px;"><span style="text-decoration: line-through;">Jetboil</span> </h3></div>
+            <div class="col-md-4" style="padding-right:0px;padding-left:0px;">
+                <h3 class="text-center name" style="color:rgb(252,253,254);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(250,252,254);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3>
+                <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3></div>
+            <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+                <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
+            </div>
+            <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
         </div>
     </div>
 </div>
