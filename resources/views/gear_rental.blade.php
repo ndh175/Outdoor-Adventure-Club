@@ -17,6 +17,23 @@
                 <h3 class="name">Backpacks </h3>
                 <p class="title">1 / 10 Avaiable</p>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="tents" tabindex="-1" role="dialog" aria-labelledby="tents_label" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="tents_label">Are you sure you want to delete:</h5>
+                  </div>
+                  <div class="modal-body">
+                    {{ $trip->name }}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="col-md-4 col-sm-6 item">
                 <a href="#cooking" class="toggle" data-toggle="collapse" aria-expanded="false" aria-controls="cooking"><img src="assets/img/gas.png"></a>
                 <h3 class="name">Cooking</h3>
