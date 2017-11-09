@@ -18,7 +18,7 @@
         <div class="row people">
             <div class="col-md-3 item"></div>
             <div class="col-md-6 item">
-                <form method="POST" action="/trips" enctype="multipart/form-data">
+                <form method="POST" action="/members" enctype="multipart/form-data">
                     <input name="_method" type="hidden" value="PATCH">
                     {{ csrf_field() }}
                     <div class="form-row">

@@ -18,7 +18,7 @@
         <div class="row people">
             <div class="col-md-12 item">
                 @foreach ($members as $member)
-                <form method="POST" action="/members/{{ $member->id }}">
+                <form method="POST" action="/members/has_paid/{{ $member->id }}">
                     <input name="_method" type="hidden" value="PATCH">
                     {{ csrf_field() }}
                     <div class="form-row">
