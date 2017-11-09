@@ -13,19 +13,18 @@
     <div class="container">
         <div class="row people" style="padding-bottom:20px;">
             <div class="col-md-4 col-sm-6 item">
-                <a href="#backpacks" class="toggle" data-toggle="collapse" aria-expanded="false" aria-controls="backpacks"><img src="assets/img/backpack.png"></a>
-                <h3 class="name">Backpacks </h3>
+                <a href="#tents" data-toggle="collapse" aria-expanded="false" aria-controls="tents"><img src="assets/img/tent-1.png"></a>
+                <h3 class="name">Tents</h3>
                 <p class="title">1 / 10 Avaiable</p>
             </div>
-
             <div class="col-md-4 col-sm-6 item">
                 <a href="#cooking" class="toggle" data-toggle="collapse" aria-expanded="false" aria-controls="cooking"><img src="assets/img/gas.png"></a>
-                <h3 class="name">Cooking</h3>
+                <h3 class="name">Cooking Utensils</h3>
                 <p class="title">1 / 10 Avaiable</p>
             </div>
             <div class="col-md-4 col-sm-6 item">
-                <a href="#backpacks" data-toggle="collapse" aria-expanded="false" aria-controls="backpacks"><img src="assets/img/tent-1.png"></a>
-                <h3 class="name">Tents </h3>
+                <a href="#food" data-toggle="collapse" aria-expanded="false" aria-controls="food"><img src="assets/img/bonfire.png"></a>
+                <h3 class="name">Food</h3>
                 <p class="title">1 / 10 Avaiable</p>
             </div>
         </div>
@@ -69,19 +68,19 @@
             </div>
             <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
         </div>
-        <div class="row people">
-            <div class="col-md-4 col-sm-6 item" style="padding-top:25px;"><img src="assets/img/thermo.png">
-                <h3 class="name">Water Bottles</h3>
-                <p class="title">16 / 50 Avaiable</p>
+        <div class="row people" style="padding-bottom:20px;">
+            <div class="col-md-2 item"></div>
+            <div class="col-md-4 col-sm-6 item">
+                <a href="#other" class="toggle" data-toggle="collapse" aria-expanded="false" aria-controls="other"><img src="assets/img/swiss-army-knife.png"></a>
+                <h3 class="name">Other Gear</h3>
+                <p class="title">1 / 10 Avaiable</p>
             </div>
-            <div class="col-md-4 col-sm-6 item" style="padding-top:25px;"><img src="assets/img/compass.png">
-                <h3 class="name">Compasses </h3>
-                <p class="title">3 / 10 Avaiable</p>
+            <div class="col-md-4 col-sm-6 item">
+                <a href="#expendable" data-toggle="collapse" aria-expanded="false" aria-controls="expendable"><img src="assets/img/rope.png"></a>
+                <h3 class="name">Disposable</h3>
+                <p class="title">1 / 10 Avaiable</p>
             </div>
-            <div class="col-md-4 col-sm-6 item" style="padding-top:25px;"><img src="assets/img/swiss-army-knife.png">
-                <h3 class="name">Misc </h3>
-                <p class="title">5 / 5 Avaiable</p>
-            </div>
+            <div class="col-md-2 item"></div>
         </div>
     </div>
 </div>
