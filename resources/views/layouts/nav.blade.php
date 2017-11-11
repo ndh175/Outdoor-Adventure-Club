@@ -12,13 +12,13 @@
                     <li @if ($page == 'trips') class="active" @endif role="presentation"><a href="/trips" style="font-family:Allerta, sans-serif;">Trips </a></li>
                     <li @if ($page == 'members') class="active" @endif role="presentation"><a href="/members" style="font-family:Allerta, sans-serif;">Members </a></li>
                     <!--<li @if ($page == 'gallery') class="active" @endif role="presentation"><a href="/gallery" style="font-family:Allerta, sans-serif;">Gallery </a></li>-->
-                    <li @if ($page == 'gear_rental') class="active" @endif role="presentation"><a href="/gear_rental" style="font-family:Allerta, sans-serif;"><del>Gear Rental</del></a></li>
+                    <li @if ($page == 'gear_rental') class="active" @endif role="presentation"><a href="/gear_rental" style="font-family:Allerta, sans-serif;">Gear Rental</a></li>
                     <li @if ($page == 'faqs') class="active" @endif role="presentation"><a href="/faqs" style="font-family:Allerta, sans-serif;">FAQ's </a></li>
                     <!-- IF ADMIN -->
                     @if (auth()->check() && auth()->user()->isModerator())
                     <li @if ($page == 'manage_trips') class="active" @endif role="presentation"><a href="/manage_trips" style="font-family:Allerta, sans-serif;">Manage Trips</a></li>
                     <li @if ($page == 'manage_members') class="active" @endif role="presentation"><a href="/manage_members" style="font-family:Allerta, sans-serif;">Manage Members</a></li>
-                    <li @if ($page == 'manage_gear') class="active" @endif role="presentation"><a href="/manage_gear" style="font-family:Allerta, sans-serif;"><del>Manage Gear</del></a></li>
+                    <li @if ($page == 'manage_gear') class="active" @endif role="presentation"><a href="/manage_gear" style="font-family:Allerta, sans-serif;">Manage Gear</a></li>
                     @endif
                     @if (auth()->check() && auth()->user()->isAdmin())
                     <li @if ($page == 'manage_eboard') class="active" @endif role="presentation"><a href="/manage_eboard" style="font-family:Allerta, sans-serif;">Manage E-Board</a></li>
