@@ -56,14 +56,10 @@
                 @endforeach
             </div>
             <div class="col-md-4" style="padding-right:0px;padding-left:0px;">
-                @foreach ($cooking_utensils as $cooking_utensil)
                     <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3>
-                @endforeach
             </div>
             <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
-                @foreach ($cooking_utensils as $cooking_utensil)
                     <button class="btn btn-success outline btn-block" type="button" style="height:40px;padding-top:0px;padding-bottom:0px;margin-top:30px;">Request Gear</button>
-                @endforeach
             </div>
             <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
         </div>
