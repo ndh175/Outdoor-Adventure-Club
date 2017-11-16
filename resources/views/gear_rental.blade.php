@@ -51,9 +51,9 @@
         <div class="row people collapse" id="cooking" style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
             <div class="col-md-1" style="padding-right:0px;padding-left:0px;"></div>
             <div class="col-md-3" style="padding-right:0px;padding-left:0px;">
-                <!--@foreach ($cooking_utensils as $cooking_utensil)
+                @foreach ($cooking_utensils as $cooking_utensil)
                 <h3 class="text-nowrap name" style="color:rgb(249,250,251);margin-top:40px;height:30px;">{{ $cooking_utensil->name }}</h3>
-            @endforeach-->
+                @endforeach
             </div>
             <div class="col-md-4" style="padding-right:0px;padding-left:0px;">
                     <h3 class="text-center name" style="color:rgb(125,130,133);margin-top:20px;margin-bottom:20px;"> </h3>
