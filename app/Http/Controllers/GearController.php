@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Gear;
+use App\Member;
 
 class GearController extends Controller
 {
@@ -14,9 +15,9 @@ class GearController extends Controller
 
     public function index()
     {
-        $cooking_utensils = Gear::whereIn('category', 'Cooking Utensils')->get();
+        $utensils = Member::whereIn('rank', 'user')->get();
         //$tents = Gear::whereIn('category', 'Tents')->get();
-        return view('gear_rental', compact('cooking_utensils'));
+        return view('gear_rental', compact('utensils'));
     }
 
     public function manage()
