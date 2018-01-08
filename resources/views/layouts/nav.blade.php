@@ -10,13 +10,7 @@
                     @php ($page = end($url_parts))
                     <li @if ($page == 'www.outdooradventureclubatou.com') class="active nav-item" @endif role="presentation"><a href="/" style="font-family:Allerta, sans-serif;">Home </a></li>
                     <li @if ($page == 'trips') class="active nav-item" @endif role="presentation"><a href="/trips" style="font-family:Allerta, sans-serif;">Trips </a></li>
-                    <li @if ($page == 'members') class="active nav-item" @endif style="font-family:Allerta, sans-serif;" class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Members</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" style="font-family:Allerta, sans-serif;">E-Board</a>
-                            <a class="dropdown-item" href="/members" style="font-family:Allerta, sans-serif;">Members</a>
-                        </div>
-                    </li>
+                    <li @if ($page == 'members') class="active nav-item" @endif role="presentation"><a href="/members" style="font-family:Allerta, sans-serif;">Members </a></li>
                     <!--<li @if ($page == 'gallery') class="active" @endif role="presentation"><a href="/gallery" style="font-family:Allerta, sans-serif;">Gallery </a></li>-->
                     <!--<li @if ($page == 'gear_rental') class="active" @endif role="presentation"><a href="/gear_rental" style="font-family:Allerta, sans-serif;">Gear Rental</a></li>-->
                     <li @if ($page == 'faqs') class="active nav-item" @endif role="presentation"><a href="/faqs" style="font-family:Allerta, sans-serif;">FAQ's </a></li>
