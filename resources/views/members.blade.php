@@ -1,7 +1,6 @@
 @extends ('layouts.master')
 
 @section ('content')
-@include ('layouts.eboard')
 <div class="team-clean">
     <div class="container">
         <div class="intro">

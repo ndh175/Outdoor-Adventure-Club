@@ -9,7 +9,7 @@ class MemberController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('moderator')->except('index');
+        $this->middleware('moderator')->except('index', 'eboard');
         $this->middleware('admin')->except('index', 'manage', 'update_has_paid');
     }
 
