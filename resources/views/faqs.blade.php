@@ -30,6 +30,10 @@
             <h2 style="margin-bottom:20px;"><strong>What if I don't have any experience?</strong> </h2>
             <p style="font-size:21px;">Thats okay! We have all levels of trips ranging from minimal day-trips, to week long backwoods backpacking trips. One of the main goals of our organization is to be able to offer activities for everyone. </p>
         </div>
+        <div style="margin-top:30px;">
+            <p style="font-size:21px;">If you have any other questions or concerns please contact Luis Cervantes (President) as <a href="mailto:luiscervantes@oakland.edu">luiscervantes@oakland.edu</a></p>
+            <hr>
+        </div>
     </div>
     <div class="col-md-3"></div>
 </div>
