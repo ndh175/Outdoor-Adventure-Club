@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12" style="background-color:rgb(38,38,38);padding:25px;border-radius:10px;">
-                <h2 class="text-center" style="font-family:Allerta, sans-serif;color:rgb(255,255,255);">About Us</h2>
+                <h2 class="text-center" style="font-family:Allerta, sans-serif;color:rgb(255,255,255);">About Us Test</h2>
                 <p class="lead text-center">Outdoor Adventure Club is designed to bring together people who love alternative sports, outdoors, and adventure. Our vision is to be able to host and plan trips and activities involving the outdoors and nature. Whether you have never
                     tried any of the latter, are looking to improve skills, or are a pro looking for some people on campus with similar interests. We'd love to have you come check us out! The group will be meeting bi-weekly to take trips, hangout
                     (eat or games), watch movies, or have guests come to speak. All meetings will be based on the interest of the majority, means and provisions and of course weather/season. </p>
