@@ -8,20 +8,20 @@
                 <ul class="nav navbar-nav navbar-center">
                     @php ($url_parts = explode('/', url()->current()))
                     @php ($page = end($url_parts))
-                    <li @if ($page == 'www.outdooradventureclubatou.com') class="active" @endif role="presentation"><a href="/" style="font-family:Allerta, sans-serif;">Home </a></li>
-                    <li @if ($page == 'trips') class="active" @endif role="presentation"><a href="/trips" style="font-family:Allerta, sans-serif;">Trips </a></li>
-                    <li @if ($page == 'members') class="active" @endif role="presentation"><a href="/members" style="font-family:Allerta, sans-serif;">Members </a></li>
+                    <li @if ($page == 'www.outdooradventureclubatou.com') class="active nav-item" @endif role="presentation"><a href="/" style="font-family:Allerta, sans-serif;">Home </a></li>
+                    <li @if ($page == 'trips') class="active nav-item" @endif role="presentation"><a href="/trips" style="font-family:Allerta, sans-serif;">Trips </a></li>
+                    <li @if ($page == 'members') class="active nav-item" @endif role="presentation"><a href="/members" style="font-family:Allerta, sans-serif;">Members </a></li>
                     <!--<li @if ($page == 'gallery') class="active" @endif role="presentation"><a href="/gallery" style="font-family:Allerta, sans-serif;">Gallery </a></li>-->
                     <!--<li @if ($page == 'gear_rental') class="active" @endif role="presentation"><a href="/gear_rental" style="font-family:Allerta, sans-serif;">Gear Rental</a></li>-->
-                    <li @if ($page == 'faqs') class="active" @endif role="presentation"><a href="/faqs" style="font-family:Allerta, sans-serif;">FAQ's </a></li>
+                    <li @if ($page == 'faqs') class="active nav-item" @endif role="presentation"><a href="/faqs" style="font-family:Allerta, sans-serif;">FAQ's </a></li>
                     <!-- IF ADMIN -->
                     @if (auth()->check() && auth()->user()->isModerator())
-                    <li @if ($page == 'manage_trips') class="active" @endif role="presentation"><a href="/manage_trips" style="font-family:Allerta, sans-serif;">Manage Trips</a></li>
-                    <li @if ($page == 'manage_members') class="active" @endif role="presentation"><a href="/manage_members" style="font-family:Allerta, sans-serif;">Manage Members</a></li>
+                    <li @if ($page == 'manage_trips') class="active nav-item" @endif role="presentation"><a href="/manage_trips" style="font-family:Allerta, sans-serif;">Manage Trips</a></li>
+                    <li @if ($page == 'manage_members') class="active nav-item" @endif role="presentation"><a href="/manage_members" style="font-family:Allerta, sans-serif;">Manage Members</a></li>
                     <!--<li @if ($page == 'manage_gear') class="active" @endif role="presentation"><a href="/manage_gear" style="font-family:Allerta, sans-serif;">Manage Gear</a></li>-->
                     @endif
                     @if (auth()->check() && auth()->user()->isAdmin())
-                    <li @if ($page == 'manage_eboard') class="active" @endif role="presentation"><a href="/manage_eboard" style="font-family:Allerta, sans-serif;">Manage E-Board</a></li>
+                    <li @if ($page == 'manage_eboard') class="active nav-item" @endif role="presentation"><a href="/manage_eboard" style="font-family:Allerta, sans-serif;">Manage E-Board</a></li>
                     @endif
 
 
@@ -31,19 +31,19 @@
                     <li role="presentation" style="color:rgb(255,255,255);">
                         Welcome {{ auth()->user()->name }}!
                     </li>
-                    <li role="presentation" @if ($page == 'settings') class="active" @endif>
+                    <li role="presentation" @if ($page == 'settings') class="active nav-item" @endif>
                         <a href="/settings" style="font-family:Allerta, sans-serif;">Settings</a>
                     </li>
                     <li role="presentation">
-                        <a href="/logout" style="font-family:Allerta, sans-serif;">Logout</a>
+                        <a href="/logout" style="font-family:Allerta, sans-serif;" class="nav-item">Logout</a>
                     </li>
                 </ul>
                 @else
                 <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation" @if ($page == 'login') class="active" @endif>
+                    <li role="presentation" @if ($page == 'login') class="active nav-item" @endif>
                         <a href="/login" style="font-family:Allerta, sans-serif;">Login</a>
                     </li>
-                    <li role="presentation" @if ($page == 'register') class="active" @endif>
+                    <li role="presentation" @if ($page == 'register') class="active nav-item" @endif>
                         <a href="/register" style="font-family:Allerta, sans-serif;">Register</a>
                     </li>
                 </ul>
