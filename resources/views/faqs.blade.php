@@ -32,7 +32,7 @@
             <hr>
         </div>
         <div style="margin-top:30px;">
-            <p style="font-size:21px;">If you have any other questions or concerns please contact Luis Cervantes (President) as <a href="mailto:luiscervantes@oakland.edu">luiscervantes@oakland.edu</a></p>
+            <p style="font-size:21px;">If you have any other questions or concerns please contact Luis Cervantes (President) at <a href="mailto:luiscervantes@oakland.edu">luiscervantes@oakland.edu</a></p>
         </div>
     </div>
     <div class="col-md-3"></div>
