@@ -11,6 +11,16 @@
                     <li @if ($page == 'www.outdooradventureclubatou.com') class="active nav-item" @endif role="presentation"><a href="/" style="font-family:Allerta, sans-serif;">Home </a></li>
                     <li @if ($page == 'trips') class="active nav-item" @endif role="presentation"><a href="/trips" style="font-family:Allerta, sans-serif;">Trips </a></li>
                     <li @if ($page == 'members') class="active nav-item" @endif role="presentation"><a href="/members" style="font-family:Allerta, sans-serif;">Members </a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
                     <!--<li @if ($page == 'gallery') class="active" @endif role="presentation"><a href="/gallery" style="font-family:Allerta, sans-serif;">Gallery </a></li>-->
                     <!--<li @if ($page == 'gear_rental') class="active" @endif role="presentation"><a href="/gear_rental" style="font-family:Allerta, sans-serif;">Gear Rental</a></li>-->
                     <li @if ($page == 'faqs') class="active nav-item" @endif role="presentation"><a href="/faqs" style="font-family:Allerta, sans-serif;">FAQ's </a></li>
