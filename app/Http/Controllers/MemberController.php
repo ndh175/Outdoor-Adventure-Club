@@ -31,6 +31,11 @@ class MemberController extends Controller
         return view('manage_eboard', compact('members'));
     }
 
+    public function eboard()
+    {
+        return view('eboard');
+    }
+
     public function update_has_paid($id)
     {
         $member = Member::find($id);
