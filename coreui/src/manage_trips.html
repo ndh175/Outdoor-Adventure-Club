@@ -1,0 +1,493 @@
+<!--
+ * CoreUI - Open Source Bootstrap Admin Template
+ * @version v1.0.6
+ * @link http://coreui.io
+ * Copyright (c) 2017 creativeLabs Łukasz Holeczek
+ * @license MIT
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>OAC - Manage Trips</title>
+
+  <!-- Icons -->
+  <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Main styles for this application -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Styles required by this views -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+</head>
+
+<!-- BODY options, add following classes to body to change options
+
+// Header options
+1. '.header-fixed'					- Fixed Header
+
+// Brand options
+1. '.brand-minimized'       - Minimized brand (Only symbol)
+
+// Sidebar options
+1. '.sidebar-fixed'					- Fixed Sidebar
+2. '.sidebar-hidden'				- Hidden Sidebar
+3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+5. '.sidebar-compact'			  - Compact Sidebar
+
+// Aside options
+1. '.aside-menu-fixed'			- Fixed Aside Menu
+2. '.aside-menu-hidden'			- Hidden Aside Menu
+3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+// Breadcrumb options
+1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
+// Footer options
+1. '.footer-fixed'					- Fixed footer
+
+-->
+
+<body class="app header-fixed sidebar-hidden aside-menu-fixed aside-menu-hidden" style="font-family: 'Cabin', sans-serif">
+  <header class="app-header navbar navbar-dark bg-dark border-dark">
+    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-brand bg-dark border-dark"></div>
+
+    <ul class="nav navbar-nav d-md-down-none">
+      <li class="nav-item px-3">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="trips.html">Trips</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="members.html">Members</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item px-3 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">E-Board</a>
+        <div class="dropdown-menu" aria-labelledby="adminDropdown">
+          <a class="dropdown-item" href="eboard.html">Current E-Board</a>
+          <a class="dropdown-item" href="eboard_positions.html">E-Board Positions</a>
+        </div>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="faqs.html">FAQ's</a>
+      </li>
+      <li class="nav-item px-3 dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+        <div class="dropdown-menu" aria-labelledby="adminDropdown">
+          <a class="dropdown-item" href="#">Manage Trips</a>
+          <a class="dropdown-item" href="manage_members.html">Manage Members</a>
+          <a class="dropdown-item" href="#">Manage E-Board</a>
+          <a class="dropdown-item" href="#">Manage Gear</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto mr-3">
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
+      </li>
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#"><i class="icon-list"></i></a>
+      </li>
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img src="img/avatars/nick.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-header text-center">
+            <strong>Account</strong>
+          </div>
+          <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+          <div class="dropdown-header text-center">
+            <strong>Settings</strong>
+          </div>
+          <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+          <div class="divider"></div>
+          <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+        </div>
+      </li>
+    </ul>
+
+  </header>
+
+  <div class="app-body">
+
+    <!-- Main content -->
+    <main class="main">
+
+      <div class="container-fluid">
+
+        <div class="animated fadeIn">
+
+          <!--TABLE-->
+          <div class="card mt-4">
+            <div class="card-header">
+              <h4 class="card-title mb-0">All Trips</h4>
+            </div>
+            <div class="card-body">
+              <table class="table table-responsive-sm mb-0">
+                <thead>
+                  <tr>
+                    <th>Trip</th>
+                    <th>Attendees</th>
+                    <th class="text-center">View</th>
+                    <th class="text-center">Remove</th>
+                    <th>Activity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div>Cabin Trip</div>
+                      <div class="small text-muted">Jan 3, 2017 - Jan 5, 2017</div>
+                    </td>
+                    <td>
+                      <div class="clearfix">
+                        <div class="float-left">
+                          <strong>12 / 20</strong>
+                        </div>
+                      </div>
+                      <div class="progress progress-xs">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary">View</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger">Remove</button>
+                    </td>
+                    <td>
+                      <div class="small text-muted">Last Updated</div>
+                      <strong>10 sec ago</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Paint Creek Cider Mill Walk</div>
+                      <div class="small text-muted">Jan 3, 2017 - Jan 5, 2017</div>
+                    </td>
+                    <td>
+                      <div class="clearfix">
+                        <div class="float-left">
+                          <strong>1/20</strong>
+                        </div>
+                      </div>
+                      <div class="progress progress-xs">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary">View</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger">Remove</button>
+                    </td>
+                    <td>
+                      <div class="small text-muted">Last Updated</div>
+                      <strong>5 minutes ago</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Nordhouse Dunes</div>
+                      <div class="small text-muted">Jan 3, 2017 - Jan 5, 2017</div>
+                    </td>
+                    <td>
+                      <div class="clearfix">
+                        <div class="float-left">
+                          <strong>19 / 20</strong>
+                        </div>
+                      </div>
+                      <div class="progress progress-xs">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary">View</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger">Remove</button>
+                    </td>
+                    <td>
+                      <div class="small text-muted">Last Updated</div>
+                      <strong>1 hour ago</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Camping on Campus</div>
+                      <div class="small text-muted">Jan 3, 2017 - Jan 5, 2017</div>
+                    </td>
+                    <td>
+                      <div class="clearfix">
+                        <div class="float-left">
+                          <strong>10 / 20</strong>
+                        </div>
+                      </div>
+                      <div class="progress progress-xs">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary">View</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger">Remove</button>
+                    </td>
+                    <td>
+                      <div class="small text-muted">Last Updated</div>
+                      <strong>Last month</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Skiing Trip</div>
+                      <div class="small text-muted">Jan 3, 2017 - Jan 5, 2017</div>
+                    </td>
+                    <td>
+                      <div class="clearfix">
+                        <div class="float-left">
+                          <strong>5 / 20</strong>
+                        </div>
+                      </div>
+                      <div class="progress progress-xs">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary">View</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger">Remove</button>
+                    </td>
+                    <td>
+                      <div class="small text-muted">Last Updated</div>
+                      <strong>Last week</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Great Smokey Mountains</div>
+                      <div class="small text-muted">Jan 3, 2017 - Jan 5, 2017</div>
+                    </td>
+                    <td>
+                      <div class="clearfix">
+                        <div class="float-left">
+                          <strong>4 / 20</strong>
+                        </div>
+                      </div>
+                      <div class="progress progress-xs">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-primary">View</button>
+                    </td>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-danger">Remove</button>
+                    </td>
+                    <td>
+                      <div class="small text-muted">Last Updated</div>
+                      <strong>Yesterday</strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-footer bg-light border-light">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--/.card-->
+
+          <!--ADD TRIP CARD-->
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title mb-0">Add Trip</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                  <div class="row">
+                      <div class="form-group col">
+                        <label for="tripName">Trip Name</label>
+                        <input type="text" class="form-control" id="tripName" placeholder="Trip Name">
+                      </div>
+                      <!--/.col-->
+                      <div class="form-group col">
+                        <label for="totalSpots">Total Spots</label>
+                        <input type="number" class="form-control" id="totalSpots" placeholder="Total Spots">
+                      </div>
+                      <!--/.col-->
+                  </div>
+                  <!--/.row-->
+                  <div class="row">
+                      <div class="form-group col">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" id="location" placeholder="Location">
+                      </div>
+                      <!--/.col-->
+                      <div class="form-group col">
+                        <label for="price">Price</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                          <div class="input-group-addon">$</div>
+                          <input type="text" class="form-control" id="price" placeholder="Price">
+                          <span class="input-group-addon">.00</span>
+                        </div>
+                      </div>
+                      <!--/.col-->
+                  </div>
+                  <!--/.row-->
+                  <div class="row">
+                      <div class="form-group col">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" class="form-control" id="startDate" placeholder="Start Date">
+                      </div>
+                      <!--/.col-->
+                      <div class="form-group col">
+                        <label for="endDate">End Date</label>
+                        <input type="date" class="form-control" id="endDate" placeholder="End Date">
+                      </div>
+                      <!--/.col-->
+                  </div>
+                  <div class="form-group">
+                    <label for="tripImage">Trip Image</label>
+                    <input type="file" class="form-control-file" id="tripImage">
+                  </div>
+                  <!--/.row-->
+                </form>
+            </div>
+            <div class="card-footer bg-light border-light">
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Submit</button>
+            </div>
+          </div>
+          <!--/.card-->
+
+          <!--EDIT TRIP CARD-->
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title mb-0">Edit Trip</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                  <div class="row">
+                    <div class="form-group col">
+                      <label for="selectTrip">Select Trip</label>
+                      <select class="form-control" id="selectTrip">
+                        <option>Cabin Trip</option>
+                        <option>Paint Creek Cider Mill Walk</option>
+                        <option>Nordhouse Dunes</option>
+                        <option>Camping on Campus</option>
+                        <option>Skiing Trip</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col">
+                      <label for="newTripName">New Trip Name</label>
+                      <input type="text" class="form-control" id="newTripName" placeholder="New Trip Name">
+                    </div>
+                    <!--/.col-->
+                    <div class="form-group col">
+                      <label for="newTotalSpots">New Total Spots</label>
+                      <input type="number" class="form-control" id="newTotalSpots" placeholder="New Total Spots">
+                    </div>
+                    <!--/.col-->
+                  </div>
+                  <!--/.row-->
+                  <div class="row">
+                      <div class="form-group col">
+                        <label for="newLocation">New Location</label>
+                        <input type="text" class="form-control" id="newLocation" placeholder="New Location">
+                      </div>
+                      <!--/.col-->
+                      <div class="form-group col">
+                        <label for="newPrice">New Price</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                          <div class="input-group-addon">$</div>
+                          <input type="text" class="form-control" id="newPrice" placeholder="New Price">
+                          <span class="input-group-addon">.00</span>
+                        </div>
+                      </div>
+                      <!--/.col-->
+                  </div>
+                  <!--/.row-->
+                  <div class="row">
+                      <div class="form-group col">
+                        <label for="newStartDate">New Start Date</label>
+                        <input type="date" class="form-control" id="newStartDate" placeholder="New Start Date">
+                      </div>
+                      <!--/.col-->
+                      <div class="form-group col">
+                        <label for="newEndDate">New End Date</label>
+                        <input type="date" class="form-control" id="newEndDate" placeholder="New End Date">
+                      </div>
+                      <!--/.col-->
+                  </div>
+                  <div class="form-group">
+                    <label for="newTripImage">New Trip Image</label>
+                    <input type="file" class="form-control-file" id="newTripImage">
+                  </div>
+                  <!--/.row-->
+                </form>
+            </div>
+            <div class="card-footer bg-light border-light">
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Submit</button>
+            </div>
+          </div>
+          <!--/.card-->
+
+  <!-- Bootstrap and necessary plugins -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/pace-progress/pace.min.js"></script>
+
+  <!-- Plugins and scripts required by all views -->
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+
+  <!-- CoreUI main scripts -->
+
+  <script src="js/app.js"></script>
+
+  <!-- Plugins and scripts required by this views -->
+
+  <!-- Custom scripts required by this view -->
+  <script src="js/views/main.js"></script>
+
+</body>
+</html>
