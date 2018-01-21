@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('content')
-  <body class="app flex-row align-items-center">
+  <body class="app flex-row align-items-center mt-4">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8">
