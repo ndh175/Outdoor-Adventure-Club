@@ -1,55 +1,79 @@
-<div style="margin-top:50px;">
-    <nav class="navbar navbar-default navbar-fixed-top nav-main-wrapper" style="background-color:rgb(38,38,38);">
-        <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand hidden navbar-link" href="#">Amazing Nav</a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            </div>
-            <div class="collapse navbar-collapse navbar-center" id="navcol-1">
-                <ul class="nav navbar-nav navbar-center">
-                    @php ($url_parts = explode('/', url()->current()))
-                    @php ($page = end($url_parts))
-                    <li @if ($page == 'www.outdooradventureclubatou.com') class="active nav-item" @endif role="presentation"><a href="/" style="font-family:Allerta, sans-serif;">Home </a></li>
-                    <li @if ($page == 'trips') class="active nav-item" @endif role="presentation"><a href="/trips" style="font-family:Allerta, sans-serif;">Trips </a></li>
-                    <li @if ($page == 'members') class="active nav-item" @endif role="presentation"><a href="/members" style="font-family:Allerta, sans-serif;">Members </a></li>
-                    <li @if ($page == 'eboard') class="active nav-item" @endif role="presentation"><a href="/eboard" style="font-family:Allerta, sans-serif;">E-Board </a></li>
-                    <!--<li @if ($page == 'gallery') class="active" @endif role="presentation"><a href="/gallery" style="font-family:Allerta, sans-serif;">Gallery </a></li>-->
-                    <!--<li @if ($page == 'gear_rental') class="active" @endif role="presentation"><a href="/gear_rental" style="font-family:Allerta, sans-serif;">Gear Rental</a></li>-->
-                    <li @if ($page == 'faqs') class="active nav-item" @endif role="presentation"><a href="/faqs" style="font-family:Allerta, sans-serif;">FAQ's </a></li>
-                    <!-- IF ADMIN -->
-                    @if (auth()->check() && auth()->user()->isModerator())
-                    <li @if ($page == 'manage_trips') class="active nav-item" @endif role="presentation"><a href="/manage_trips" style="font-family:Allerta, sans-serif;">Manage Trips</a></li>
-                    <li @if ($page == 'manage_members') class="active nav-item" @endif role="presentation"><a href="/manage_members" style="font-family:Allerta, sans-serif;">Manage Members</a></li>
-                    <!--<li @if ($page == 'manage_gear') class="active" @endif role="presentation"><a href="/manage_gear" style="font-family:Allerta, sans-serif;">Manage Gear</a></li>-->
-                    @endif
-                    @if (auth()->check() && auth()->user()->isAdmin())
-                    <li @if ($page == 'manage_eboard') class="active nav-item" @endif role="presentation"><a href="/manage_eboard" style="font-family:Allerta, sans-serif;">Manage E-Board</a></li>
-                    @endif
+<header class="app-header navbar navbar-dark bg-dark border-dark ml-0">
+  <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="navbar-brand bg-dark border-dark"></div>
 
-                </ul>
-                @if (auth()->check())
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation" style="color:rgb(255,255,255);">
-                        Welcome {{ auth()->user()->name }}!
-                    </li>
-                    <li role="presentation" @if ($page == 'settings') class="active nav-item" @endif>
-                        <a href="/settings" style="font-family:Allerta, sans-serif;">Settings</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="/logout" style="font-family:Allerta, sans-serif;" class="nav-item">Logout</a>
-                    </li>
-                </ul>
-                @else
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation" @if ($page == 'login') class="active nav-item" @endif>
-                        <a href="/login" style="font-family:Allerta, sans-serif;">Login</a>
-                    </li>
-                    <li role="presentation" @if ($page == 'register') class="active nav-item" @endif>
-                        <a href="/register" style="font-family:Allerta, sans-serif;">Register</a>
-                    </li>
-                </ul>
-                @endif
-            </div>
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item px-3">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="trips.html">Trips</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="members.html">Members</a>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item px-3 dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">E-Board</a>
+      <div class="dropdown-menu" aria-labelledby="adminDropdown">
+        <a class="dropdown-item" href="eboard.html">Current E-Board</a>
+        <a class="dropdown-item" href="eboard_positions.html">E-Board Positions</a>
+      </div>
+    </li>
+    <li class="nav-item px-3">
+      <a class="nav-link" href="faqs.html">FAQ's</a>
+    </li>
+    <li class="nav-item px-3 dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Admin
+      </a>
+      <div class="dropdown-menu" aria-labelledby="adminDropdown">
+        <a class="dropdown-item" href="manage_trips.html">Manage Trips</a>
+        <a class="dropdown-item" href="manage_members.html">Manage Members</a>
+        <a class="dropdown-item" href="#">Manage E-Board</a>
+        <a class="dropdown-item" href="#">Manage Gear</a>
+      </div>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav ml-auto mr-3">
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
+    </li>
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" href="#"><i class="icon-list"></i></a>
+    </li>
+    <li class="nav-item d-md-down-none">
+      <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <img src="img/avatars/nick.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-header text-center">
+          <strong>Account</strong>
         </div>
-    </nav>
-</div>
+        <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+        <div class="dropdown-header text-center">
+          <strong>Settings</strong>
+        </div>
+        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a>
+        <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+        <div class="divider"></div>
+        <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+      </div>
+    </li>
+  </ul>
+
+</header>
