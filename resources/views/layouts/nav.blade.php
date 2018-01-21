@@ -7,7 +7,7 @@
 
   <ul class="nav navbar-nav d-md-down-none">
     <li class="nav-item px-3">
-      <a class="nav-link active" href="#">Home</a>
+      <a class="nav-link @if ($page == 'www.outdooradventureclubatou.com') active @endif" href="#">Home</a>
     </li>
     <li class="nav-item px-3">
       <a class="nav-link" href="trips.html">Trips</a>
