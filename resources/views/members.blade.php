@@ -10,7 +10,7 @@
 
       <div class="animated fadeIn">
 
-        <div class="card-columns mb-4 mt-4" style="width:20vh">
+        <div class="card-columns mb-4 mt-4">
           @foreach ($members as $member)
           <div class="card text-white bg-dark">
             <img class="card-img-top" src="{{ asset('/storage/' . substr($member->image_url, 7)) }}" alt="Card image cap">
