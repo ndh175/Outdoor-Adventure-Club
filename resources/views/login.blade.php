@@ -28,6 +28,7 @@
                       <button type="button" class="btn btn-link px-0">Forgot password?</button>
                     </div>
                   </div>
+                  @include ('layouts.errors')
                 </form>
               </div>
             </div>
