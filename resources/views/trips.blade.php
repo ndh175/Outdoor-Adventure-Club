@@ -55,6 +55,7 @@
   </main>
 </div>
 
+<!--
 @foreach ($future_trips as $trip)
     @include ('trips.trip')
 @endforeach
@@ -63,3 +64,4 @@
 @endforeach
 <div style="height:40px"></div>
 @endsection
+-->
