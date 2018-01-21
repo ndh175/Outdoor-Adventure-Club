@@ -9,8 +9,8 @@ class MemberController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('moderator')->except('index', 'eboard');
-        $this->middleware('admin')->except('index', 'eboard', 'manage', 'update_has_paid');
+        $this->middleware('moderator')->except('index', 'eboard', 'eboard_positions');
+        $this->middleware('admin')->except('index', 'eboard', 'eboard_positions', 'manage', 'update_has_paid');
     }
 
     public function index()
@@ -34,6 +34,10 @@ class MemberController extends Controller
     public function eboard()
     {
         return view('eboard');
+    }
+    public function eboard_positions()
+    {
+        return view('eboard_positions');
     }
 
     public function update_has_paid($id)

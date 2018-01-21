@@ -40,6 +40,7 @@ Route::patch('/members/has_paid/{id}', 'MemberController@update_has_paid');
 Route::patch('/members/{id}', 'MemberController@update');
 Route::get('/manage_eboard', 'MemberController@manage_eboard');
 Route::get('/eboard', 'MemberController@eboard');
+Route::get('/eboard_positions', 'MemberController@eboard_positions');
 Route::patch('/manage_members/rank/{id}', 'MemberController@update_rank');
 Route::patch('/manage_members/title/{id}', 'MemberController@update_title');
 
