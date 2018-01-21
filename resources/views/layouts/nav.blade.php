@@ -13,30 +13,30 @@
       <a class="nav-link @if ($page == 'trips') active @endif" href="/trips">Trips</a>
     </li>
     <li class="nav-item px-3">
-      <a class="nav-link" href="members.html">Members</a>
+      <a class="nav-link @if ($page == 'members') active @endif" href="/members">Members</a>
     </li>
     <li class="nav-item px-3">
-      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link @if ($page == 'gallery') active @endif" href="/gallery" disabled>Gallery</a>
     </li>
     <li class="nav-item px-3 dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">E-Board</a>
       <div class="dropdown-menu" aria-labelledby="adminDropdown">
-        <a class="dropdown-item" href="eboard.html">Current E-Board</a>
-        <a class="dropdown-item" href="eboard_positions.html">E-Board Positions</a>
+        <a class="dropdown-item @if ($page == 'eboard') active @endif" href="/eboard">Current E-Board</a>
+        <a class="dropdown-item @if ($page == 'eboard_positions') active @endif" href="/eboard_positions" disabled>E-Board Positions</a>
       </div>
     </li>
     <li class="nav-item px-3">
-      <a class="nav-link" href="faqs.html">FAQ's</a>
+      <a class="nav-link @if ($page == 'faqs') active @endif" href="/faqs">FAQ's</a>
     </li>
     <li class="nav-item px-3 dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Admin
       </a>
       <div class="dropdown-menu" aria-labelledby="adminDropdown">
-        <a class="dropdown-item" href="manage_trips.html">Manage Trips</a>
-        <a class="dropdown-item" href="manage_members.html">Manage Members</a>
-        <a class="dropdown-item" href="#">Manage E-Board</a>
-        <a class="dropdown-item" href="#">Manage Gear</a>
+        <a class="dropdown-item @if ($page == 'manage_trips') active @endif" href="/manage_trips" disabled>Manage Trips</a>
+        <a class="dropdown-item @if ($page == 'manage_members') active @endif" href="/manage_members" disabled>Manage Members</a>
+        <a class="dropdown-item" href="#" disabled>Manage E-Board</a>
+        <a class="dropdown-item" href="#" disabled>Manage Gear</a>
       </div>
     </li>
   </ul>
