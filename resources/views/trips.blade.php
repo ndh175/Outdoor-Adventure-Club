@@ -14,3 +14,4 @@
     </div>
   </main>
 </div>
+@endsection
