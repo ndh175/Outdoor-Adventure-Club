@@ -18,11 +18,3 @@
     </div>
   </main>
 </div>
-
-<!--
-@foreach ($past_trips as $trip)
-    @include ('trips.past_trip')
-@endforeach
-<div style="height:40px"></div>
-@endsection
--->
