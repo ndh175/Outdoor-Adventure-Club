@@ -22,7 +22,7 @@
   @if ($page == 'login') <title>Login</title> @endif
   @if ($page == 'register') <title>Register</title> @endif
   @if ($page == 'settings') <title>Settings</title> @endif
-    
+
   <!-- Icons -->
   <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
