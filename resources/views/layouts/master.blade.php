@@ -36,23 +36,25 @@
 
 </head>
 
-<!--
-<body>
+<body class="app header-fixed sidebar-hidden aside-menu-fixed aside-menu-hidden" style="font-family: 'Cabin', sans-serif">
     @include ('layouts.nav')
     @yield ('content')
-    <script src="{{ asset("assets/js/jquery.min.js") }}"></script>
-    <script src="{{ asset("assets/bootstrap/js/bootstrap.min.js") }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="{{ asset("assets/js/Simple-Slider.js") }}"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="{{ asset("assets/js/collapsecustom.js") }}"></script>
-    <script src="{{ asset("js/file_picker.js") }}"></script>
-    <script>
-    $( function() {
-      $( ".datepicker" ).datepicker();
-    } );
-    </script>
+    <!-- Bootstrap and necessary plugins -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/pace-progress/pace.min.js"></script>
+
+    <!-- Plugins and scripts required by all views -->
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+
+    <!-- CoreUI main scripts -->
+
+    <script src="js/app.js"></script>
+
+    <!-- Plugins and scripts required by this views -->
+
+    <!-- Custom scripts required by this view -->
+    <script src="js/views/main.js"></script>
 </body>
 </html>
--->
