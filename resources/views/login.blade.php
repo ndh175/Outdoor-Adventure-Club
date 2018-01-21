@@ -12,19 +12,19 @@
                   {{ csrf_field() }}
                   <h1>Login</h1>
                   <p class="text-muted">Sign In to your account</p>
-                  <div class="input-group mb-3">
+                  <div class="input-group mb-3 form-group">
                     <span class="input-group-addon"><i class="icon-user"></i></span>
                     <input type="text" class="form-control" name="email" placeholder="Email">
                   </div>
-                  <div class="input-group mb-4">
+                  <div class="input-group mb-4 form-group">
                     <span class="input-group-addon"><i class="icon-lock"></i></span>
                     <input type="password" class="form-control" name="password" placeholder="Password">
                   </div>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 form-group">
                       <button type="button" class="btn btn-primary px-4" type="submit">Login</button>
                     </div>
-                    <div class="col-6 text-right">
+                    <div class="form-group col-6 text-right">
                       <button type="button" class="btn btn-link px-0">Forgot password?</button>
                     </div>
                   </div>
