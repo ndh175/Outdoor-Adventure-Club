@@ -1,79 +1,120 @@
-<div class="team-clean">
-    <div class="container">
-        <div class="intro">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <h2 class="text-center" style="padding-top:20px;padding-bottom:20px;margin-bottom:20px;">E-Board </h2></div>
-                <div class="col-md-1" style="padding-top:40px;"><a href="#positions" data-toggle="collapse" aria-expanded="false" aria-controls="positions"><i class="glyphicon glyphicon-info-sign" data-toggle="collapse"></i></a></div>
+<div class="app-body">
+
+  <!-- Main content -->
+  <main class="main">
+
+    <div class="container-fluid">
+
+      <div class="animated fadeIn">
+
+        <div class="card-deck mb-4 mt-4">
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">President</h4>
             </div>
+            <img class="card-img-top" src="img/avatars/luis.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Luis Cervantes <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
+            </div>
+          </div>
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">Vice President</h4>
+            </div>
+            <img class="card-img-top" src="img/avatars/nick.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Nick Holbrook <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
+            </div>
+          </div>
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">Treasurer</h4>
+            </div>
+            <img class="card-img-top" src="img/avatars/micheal.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Micheal Cloutier <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
+            </div>
+          </div>
         </div>
-        @include ('layouts.eboard_info')
-        <div style="background-color:rgb(38,38,38);padding:40px;border-radius:10px;color:rgb(255,255,255)">
-            <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Jacquelyn Tindall </h3>
-                    <p class="title"> Vice President </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/luis.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Luis Cervantes </h3>
-                    <p class="title"> President </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/micheal.jpg" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Michael Cloutier </h3>
-                    <p class="title"> Treasurer </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
+
+        <div class="card-deck mb-4">
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">Secretary</h4>
             </div>
-            <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Jannah Metcalfe </h3>
-                    <p class="title"> Secretary </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Taylor Fournier </h3>
-                    <p class="title"> Secretary </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Erin Herner </h3>
-                    <p class="title"> PR / Social Outreach </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
+            <img class="card-img-top" src="img/avatars/luis.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Luis Cervantes <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
             </div>
-            <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Olivia Duffton </h3>
-                    <p class="title"> Fundraising </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> N/A </h3>
-                    <p class="title"> Creative Director </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Briana Sanchez </h3>
-                    <p class="title"> Safety Director </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
+          </div>
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">Public Relations</h4>
             </div>
-            <div class="row people" style="background-color:rgb(38,38,38);color:rgb(255,255,255)">
-                <div class="col-md-2 item"></div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Tom Weddell </h3>
-                    <p class="title"> Gear Manager </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/profile.png" style="width:150px;height:150px;object-fit:cover;overflow:hidden;">
-                    <h3 class="name"> Grace Goodrich </h3>
-                    <p class="title"> Gear Manager </p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>                </div>
-                <div class="col-md-2 item"></div>
+            <img class="card-img-top" src="img/avatars/nick.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Nick Holbrook <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
             </div>
+          </div>
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">Creative Director</h4>
+            </div>
+            <img class="card-img-top" src="img/avatars/micheal.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Micheal Cloutier <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
+            </div>
+          </div>
         </div>
+
+        <div class="card-deck mb-4">
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">Fundraising</h4>
+            </div>
+            <img class="card-img-top" src="img/avatars/luis.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Luis Cervantes <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
+            </div>
+          </div>
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">Gear Manager</h4>
+            </div>
+            <img class="card-img-top" src="img/avatars/nick.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Nick Holbrook <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
+            </div>
+          </div>
+          <div class="card ml-4 mr-4 text-white bg-dark">
+            <div class="card-header">
+              <h4 class="card-title m-0">Safety Director</h4>
+            </div>
+            <img class="card-img-top" src="img/avatars/micheal.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title m-0">Micheal Cloutier <i class="fa fa-check text-primary"></i></h5>
+              <p class="card-text m-0"><small class="text-muted">Joined November 06, 2017</small></p>
+              <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </main>
 </div>
