@@ -41,38 +41,44 @@
     </li>
   </ul>
   <ul class="nav navbar-nav ml-auto mr-3">
-    <li class="nav-item d-md-down-none">
-      <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
-    </li>
-    <li class="nav-item d-md-down-none">
-      <a class="nav-link" href="#"><i class="icon-list"></i></a>
-    </li>
-    <li class="nav-item d-md-down-none">
-      <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-        <img src="img/avatars/nick.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-      </a>
-      <div class="dropdown-menu dropdown-menu-right">
-        <div class="dropdown-header text-center">
-          <strong>Account</strong>
+    @if (auth()->check())
+    <ul class="nav navbar-nav navbar-right">
+        <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img src="img/avatars/nick.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-header text-center">
+            <strong>Account</strong>
+          </div>
+          <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+          <div class="dropdown-header text-center">
+            <strong>Settings</strong>
+          </div>
+          <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+          <div class="divider"></div>
+          <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
         </div>
-        <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
-        <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
-        <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
-        <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
-        <div class="dropdown-header text-center">
-          <strong>Settings</strong>
-        </div>
-        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
-        <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a>
-        <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
-        <div class="divider"></div>
-        <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
-        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
-      </div>
+    </ul>
+    @else
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item px-3">
+        <a class="nav-link @if ($page == 'faqs') active @endif" href="/faqs">FAQ's</a>
+      </li>
+        <li role="nav-item px-3" @if ($page == 'login') class="active nav-item" @else class="nav-item" @endif>
+            <a href="/login" style="font-family:Allerta, sans-serif;">Login</a>
+        </li>
+        <li role="nav-item px-3" @if ($page == 'register') class="active nav-item" @else class="nav-item" @endif>
+            <a href="/register" style="font-family:Allerta, sans-serif;">Register</a>
+        </li>
+    </ul>
+    @endif
     </li>
   </ul>
 
