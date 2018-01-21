@@ -52,6 +52,7 @@ Route::get('/register_trip/{trip}', 'TripController@register_trip');
 Route::post('/register_trip/{trip}', 'TripController@register_trip_link');
 Route::delete('/register_trip/{trip}/{member}', 'TripController@delete_trip_link');
 Route::patch('/trips', 'TripController@update');
+Route::get('/gallery', 'TripsController@gallery');
 
 Route::get('/login', 'AuthController@login')->name('login');
 Route::post('/login', 'AuthController@create');

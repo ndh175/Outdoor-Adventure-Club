@@ -12,8 +12,8 @@ class TripController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth')->except('index');
-        $this->middleware('moderator')->except('index', 'register_trip', 'register_trip_link');
+        $this->middleware('auth')->except('index', 'gallery');
+        $this->middleware('moderator')->except('index', 'register_trip', 'register_trip_link', 'gallery');
     }
 
     public function index()
@@ -103,6 +103,11 @@ class TripController extends Controller
     {
         Trip::find($id)->delete();
         return redirect('/manage_trips');
+    }
+
+    public function gallery()
+    {
+        return view('/gallery');
     }
 
     public function register_trip(Trip $trip)
