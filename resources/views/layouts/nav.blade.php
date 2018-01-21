@@ -68,14 +68,11 @@
     </ul>
     @else
     <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item px-3">
-        <a class="nav-link @if ($page == 'faqs') active @endif" href="/faqs">FAQ's</a>
-      </li>
         <li role="nav-item px-3" @if ($page == 'login') class="active nav-item" @else class="nav-item" @endif>
-            <a href="/login" style="font-family:Allerta, sans-serif;">Login</a>
+            <a class="nav-link" href="/login">Login</a>
         </li>
         <li role="nav-item px-3" @if ($page == 'register') class="active nav-item" @else class="nav-item" @endif>
-            <a href="/register" style="font-family:Allerta, sans-serif;">Register</a>
+            <a class="nav-link" href="/register">Register</a>
         </li>
     </ul>
     @endif
