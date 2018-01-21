@@ -10,18 +10,18 @@
   <link rel="shortcut icon" href="img/favicon.png">
   @php ($url_parts = explode('/', url()->current()))
   @php ($page = end($url_parts))
-  @if ($page == 'www.outdooradventureclubatou.com') <title>Home</title> @endif
-  @if ($page == 'trips') <title>Trips</title> @endif
-  @if ($page == 'members') <title>Members</title> @endif
-  @if ($page == 'gear_rental') <title>Gear Rental</title> @endif
-  @if ($page == 'faqs') <title>FAQs</title> @endif
-  @if ($page == 'manage_trips') <title>Manage Trips</title> @endif
-  @if ($page == 'manage_members') <title>Manage Members</title> @endif
-  @if ($page == 'manage_gear') <title>Manage Gear</title> @endif
-  @if ($page == 'manage_eboard') <title>Manage E-Board</title> @endif
-  @if ($page == 'login') <title>Login</title> @endif
-  @if ($page == 'register') <title>Register</title> @endif
-  @if ($page == 'settings') <title>Settings</title> @endif
+  @if ($page == 'www.outdooradventureclubatou.com') <title>OAC - Home</title> @endif
+  @if ($page == 'trips') <title>OAC - Trips</title> @endif
+  @if ($page == 'members') <title>OAC - Members</title> @endif
+  @if ($page == 'gear_rental') <title>OAC - Gear Rental</title> @endif
+  @if ($page == 'faqs') <title>OAC - FAQs</title> @endif
+  @if ($page == 'manage_trips') <title>OAC - Manage Trips</title> @endif
+  @if ($page == 'manage_members') <title>OAC - Manage Members</title> @endif
+  @if ($page == 'manage_gear') <title>OAC - Manage Gear</title> @endif
+  @if ($page == 'manage_eboard') <title>OAC - Manage E-Board</title> @endif
+  @if ($page == 'login') <title>OAC - Login</title> @endif
+  @if ($page == 'register') <title>OAC - Register</title> @endif
+  @if ($page == 'settings') <title>OAC - Settings</title> @endif
 
   <!-- Icons -->
   <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
