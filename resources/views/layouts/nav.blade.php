@@ -28,7 +28,7 @@
     <li class="nav-item px-3">
       <a class="nav-link @if ($page == 'faqs') active @endif" href="/faqs">FAQ's</a>
     </li>
-    @if (auth()->check() && auth()->user()->isAdmin())
+    @if (auth()->check())
     <li class="nav-item px-3 dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Admin
@@ -40,8 +40,8 @@
         <a class="dropdown-item" href="#" disabled>Manage Gear</a>
       </div>
     </li>
+    @endif
   </ul>
-  @endif
   <ul class="nav navbar-nav ml-auto mr-3">
     @if (auth()->check())
     <ul class="nav navbar-nav navbar-right">
