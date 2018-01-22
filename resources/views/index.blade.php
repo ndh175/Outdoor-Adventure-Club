@@ -19,19 +19,9 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="d-flex justify-content-center">
-            @media screen and (orientation:portrait) {
-              <img class="d-block img-fluid" style="width:50vw;height:35vh;object-fit:contain;overflow:hidden;position:absolute;top:10vh" src="img/oac_white.png" alt="First slide">
-            }
-            @media screen and (orientation:landscape) {
-              <img class="d-block img-fluid" style="width:50vw;height:50vh;object-fit:contain;overflow:hidden;position:absolute;top:10vh" src="img/oac_white.png" alt="First slide">
-            }
+            <img class="d-block img-fluid" style="width:50vw;height:50vh;object-fit:contain;overflow:hidden;position:absolute;top:10vh" src="img/oac_white.png" alt="First slide">
           </div>
-          @media screen and (orientation:portrait) {
-            <img class="d-block img-fluid" style="width:100vw;height:35vh;object-fit:cover;overflow:hidden;" src="img/trips/lake.jpg" alt="First slide">
-          }
-          @media screen and (orientation:landscape) {
-            <img class="d-block img-fluid" style="width:100vw;height:75vh;object-fit:cover;overflow:hidden;" src="img/trips/lake.jpg" alt="First slide">
-          }
+          <img class="d-block img-fluid" style="width:100vw;height:75vh;object-fit:cover;overflow:hidden;" src="img/trips/lake.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
           <div class="carousel-caption d-none d-md-block">
