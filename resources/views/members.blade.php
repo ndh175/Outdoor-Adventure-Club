@@ -12,7 +12,7 @@
 
         <div class="card-columns mb-4 mt-4">
           @foreach ($members as $member)
-          <div class="card text-white bg-dark">
+          <div class="card text-white bg-dark" style="max-width:20vw">
             <img class="card-img-top" src="{{ asset('/storage/' . substr($member->image_url, 7)) }}" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title m-0">{{ $member->name }} @if ($member->has_paid)<i class="fa fa-check text-primary"></i>@endif</h5>
