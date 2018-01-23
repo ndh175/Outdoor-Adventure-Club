@@ -49,12 +49,7 @@
       </div>
     </div>
 
-    <div class="card-group m-4">
-      <div class="card text-white bg-dark">
-        <img class="card-img-top" src="img/dunes.jpg" alt="Card image cap">
-      </div>
-      @include ('trips.trip')
-    </div>
+    @include ('trips.trip')
   </div>
 </div>
 @endsection
