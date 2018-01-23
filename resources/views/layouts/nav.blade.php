@@ -1,5 +1,5 @@
 <header class="app-header navbar navbar-dark bg-dark border-dark ml-0">
-  <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
+  <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto ml-4" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
 
