@@ -43,32 +43,32 @@
         <nav class="sidebar-nav">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="main.html"><i class="icon-speedometer"></i> Home <span class="badge badge-primary">NEW</span></a>
+              <a class="nav-link" href="/"><i class="icon-speedometer"></i> Home <span class="badge badge-primary">NEW</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-puzzle"></i> Trips</a>
+              <a class="nav-link" href="/trips"><i class="icon-puzzle"></i> Trips</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-puzzle"></i> Members</a>
+              <a class="nav-link" href="/members"><i class="icon-puzzle"></i> Members</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-puzzle"></i> Gallery</a>
+              <a class="nav-link" href="/gallery"><i class="icon-puzzle"></i> Gallery</a>
             </li>
             <li class="nav-item nav-dropdown">
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> Current E-Board</a>
+                  <a class="nav-link" href="/eboard"><i class="icon-puzzle"></i> Current E-Board</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> E-Board Positions</a>
+                  <a class="nav-link" href="/eboard_positions"><i class="icon-puzzle"></i> E-Board Positions</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-puzzle"></i> FAQ's</a>
+              <a class="nav-link" href="/faqs"><i class="icon-puzzle"></i> FAQ's</a>
             </li>
-
+            @if (auth()->check())
             <li class="nav-title">
               Other
             </li>
@@ -76,19 +76,20 @@
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Admin</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link " href="#"><i class="icon-puzzle"></i> Manage Members</a>
+                  <a class="nav-link" href="/manage_members"><i class="icon-puzzle"></i> Manage Members</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> Manage Trips</a>
+                  <a class="nav-link" href="/manage_trips"><i class="icon-puzzle"></i> Manage Trips</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> Manage E-Board</a>
+                  <a class="nav-link" href="/manage_eboard"><i class="icon-puzzle"></i> Manage E-Board</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> Manage Gear</a>
+                  <a class="nav-link" href="/manage_gear"><i class="icon-puzzle"></i> Manage Gear</a>
                 </li>
               </ul>
             </li>
+          @endif
           </ul>
         </nav>
         <button class="sidebar-minimizer brand-minimizer" type="button"></button>
