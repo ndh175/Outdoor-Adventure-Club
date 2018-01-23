@@ -149,22 +149,6 @@
                 <p class="card-text mt-auto"><small class="text-muted">Last updated Jan 11, 2018</small></p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Gear Manager</h4>
-                <p class="card-text">
-                  <ul>
-                    <li>Must maintain inventory (Inventory History, etc).</li>
-                    <li>Coordinate with Treasurer and other E-Board members to keep list of paying members updated.</li>
-                    <li>Create and update a google form for members to sign out/ reserve gear whenever they would like.</li>
-                    <li>Store & retrieve gear for members.</li>
-                    <li>Check out gear to members.</li>
-                    <li>Must plan at least one outing/ activity/ trip per semester.</li>
-                  </ul>
-                </p>
-                <p class="card-text mt-auto"><small class="text-muted">Last updated Jan 11, 2018</small></p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
