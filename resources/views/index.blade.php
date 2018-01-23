@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    @include ('trips.trip')
+    
   </div>
 </div>
 @endsection
