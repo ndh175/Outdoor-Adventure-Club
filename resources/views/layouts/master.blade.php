@@ -46,27 +46,27 @@
               <a class="nav-link" href="main.html"><i class="icon-speedometer"></i> Home <span class="badge badge-primary">NEW</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Trips</a>
+              <a class="nav-link" href="#"><i class="icon-puzzle"></i> Trips</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Members</a>
+              <a class="nav-link" href="#"><i class="icon-puzzle"></i> Members</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Gallery</a>
+              <a class="nav-link" href="#"><i class="icon-puzzle"></i> Gallery</a>
             </li>
             <li class="nav-item nav-dropdown">
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Current E-Board</a>
+                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> Current E-Board</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board Positions</a>
+                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> E-Board Positions</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> FAQ's</a>
+              <a class="nav-link" href="#"><i class="icon-puzzle"></i> FAQ's</a>
             </li>
 
             <li class="nav-title">
@@ -76,16 +76,16 @@
               <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Admin</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Members</a>
+                  <a class="nav-link " href="#"><i class="icon-puzzle"></i> Manage Members</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Trips</a>
+                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> Manage Trips</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage E-Board</a>
+                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> Manage E-Board</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Gear</a>
+                  <a class="nav-link" href="#"><i class="icon-puzzle"></i> Manage Gear</a>
                 </li>
               </ul>
             </li>
