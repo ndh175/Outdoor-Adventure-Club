@@ -10,7 +10,7 @@
 
         <div class="animated fadeIn">
 
-        <div class="card-columns mb-4 mt-4" style="column-count:3">
+        <div class="card-columns mb-4 mt-4">
           <div class="card text-white bg-dark">
             <div class="card-header">
               <h4 class="card-title m-0">President</h4>
