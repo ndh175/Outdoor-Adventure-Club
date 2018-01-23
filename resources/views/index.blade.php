@@ -1,15 +1,8 @@
 @extends ('layouts.master')
 
 @section ('content')
-<div class="app-body">
-
-  <!-- Main content -->
-  <main class="main">
-
-    <div class="container-fluid p-0">
-
-      <div class="animated fadeIn">
-
+<div class="container-fluid p-0">
+  <div class="animated fadeIn">
     <div id="carouselExampleIndicators" class="carousel slide m-0" data-interval="5000" data-ride="carousel" style="font-weight:bold;">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -77,7 +70,5 @@
       </div>
     </div>
   </div>
-</div>
-</main>
 </div>
 @endsection
