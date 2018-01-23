@@ -36,7 +36,7 @@
 
 </head>
 
-<body class="app header-fixed sidebar-hidden aside-menu-fixed aside-menu-hidden" style="font-family: 'Cabin', sans-serif">
+<body class="app header-fixed sidebar-hidden aside-menu-hidden" style="font-family: 'Cabin', sans-serif">
     @include ('layouts.nav')
     <div class="app-body">
       <main class="main">
@@ -46,36 +46,47 @@
               <li class="nav-item">
                 <a class="nav-link" href="main.html"><i class="icon-speedometer"></i> Home <span class="badge badge-primary">NEW</span></a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Trips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Members</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Gallery</a>
+              </li>
+              <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board</a>
+                <ul class="nav-dropdown-items">
+                  <li class="nav-item">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Current E-Board</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board Positions</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> FAQ's</a>
+              </li>
 
               <li class="nav-title">
                 Other
               </li>
               <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Components</a>
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Admin</a>
                 <ul class="nav-dropdown-items">
                   <li class="nav-item">
-                    <a class="nav-link" href="components/buttons.html"><i class="icon-puzzle"></i> Buttons</a>
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Members</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="components/social-buttons.html"><i class="icon-puzzle"></i> Social Buttons</a>
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Trips</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="components/cards.html"><i class="icon-puzzle"></i> Cards</a>
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage E-Board</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="components/forms.html"><i class="icon-puzzle"></i> Forms</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="components/modals.html"><i class="icon-puzzle"></i> Modals</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="components/switches.html"><i class="icon-puzzle"></i> Switches</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="components/tables.html"><i class="icon-puzzle"></i> Tables</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="components/tabs.html"><i class="icon-puzzle"></i> Tabs</a>
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Gear</a>
                   </li>
                 </ul>
               </li>
