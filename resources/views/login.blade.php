@@ -1,9 +1,9 @@
 @extends ('layouts.master')
 
 @section ('content')
-  <body class="app flex-row flex-column align-items-center mt-4">
+  <body class="app d-flex flex-row align-items-center mt-4">
     <div class="container">
-      <div class="column justify-content-center">
+      <div class="d-flex justify-content-center" style="flex-direction: column">
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="card-group">
