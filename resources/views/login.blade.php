@@ -6,7 +6,7 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="card-group">
-            <div class="card p-4 pt-5">
+            <div class="card p-4 pt-10">
               <div class="card-body">
                 <form action="/login" method="POST">
                   {{ csrf_field() }}
