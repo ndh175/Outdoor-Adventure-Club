@@ -53,21 +53,7 @@
       <div class="card text-white bg-dark">
         <img class="card-img-top" src="img/dunes.jpg" alt="Card image cap">
       </div>
-      <div class="card text-white bg-dark">
-        <div class="card-header">
-          <h3 class="card-title m-0">Nordhouse Dunes</h3>
-        </div>
-        <div class="card-body">
-          <p class="card-text"><strong>Date(s):</strong> 12/01/2017 - 12/03/2017</p>
-          <p class="card-text"><strong>Location:</strong> Marquette, MI</p>
-          <p class="card-text"><strong>Price:</strong> $25</p>
-          <p class="card-text"><strong>Spots Remaining:</strong> 15 / 18</p>
-          <button type="button" class="btn btn-lg btn-primary">Register</button>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
+      @include ('trips.trip')
     </div>
   </div>
 </div>
