@@ -8,7 +8,7 @@
       <div class="animated fadeIn">
 
       <div class="card-columns mb-4 mt-4">
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">President</h4>
           </div>
@@ -19,7 +19,7 @@
             <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
           </div>
         </div>
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">Vice President</h4>
           </div>
@@ -30,7 +30,7 @@
             <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
           </div>
         </div>
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">Treasurer</h4>
           </div>
@@ -41,7 +41,7 @@
             <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
           </div>
         </div>
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">Secretary</h4>
           </div>
@@ -52,7 +52,7 @@
             <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
           </div>
         </div>
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">Public Relations</h4>
           </div>
@@ -63,7 +63,7 @@
             <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
           </div>
         </div>
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">Creative Director</h4>
           </div>
@@ -74,7 +74,7 @@
             <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
           </div>
         </div>
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">Fundraising</h4>
           </div>
@@ -85,7 +85,7 @@
             <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
           </div>
         </div>
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">Gear Manager</h4>
           </div>
@@ -96,7 +96,7 @@
             <p class="card-text mt-2">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa.</p>
           </div>
         </div>
-        <div class="card ml-4 mr-4 text-white bg-dark">
+        <div class="card text-white bg-dark">
           <div class="card-header">
             <h4 class="card-title m-0">Safety Director</h4>
           </div>
