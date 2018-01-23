@@ -117,25 +117,6 @@
             </div>
             <div class="card">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Creative Director</h4>
-                <p class="card-text">
-                  <ul>
-                    <li>Take photos / videos at major events & upload to Google Drive.</li>
-                    <li>Work with the Fundraising and PR & SO to develop / create flyers for future events.</li>
-                    <li>Coordinate with club members to collect photos / media.</li>
-                    <li>Coordinate with PR & SO to upload photos to social media.</li>
-                    <li>Coordinate with the Webmaster to upload photos / videos to the website.</li>
-                    <li>Assist in the creation of any designs needed for club (membership cards, t-shirts, flyers, poster boards, etc).</li>
-                    <li>Maintain our club website and GrizzOrgs.</li>
-                    <li>Work alongside the Secretary to post upcoming events/a calendar and previous meeting summaries on the website and GrizzOrgs.</li>
-                    <li>Must plan at least one outing / activity / trip per semester.</li>
-                  </ul>
-                </p>
-                <p class="card-text mt-auto"><small class="text-muted">Last updated Jan 11, 2018</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Fundraising</h4>
                 <p class="card-text">
                   <ul>
@@ -160,6 +141,25 @@
                     <li>Store & retrieve gear for members.</li>
                     <li>Check out gear to members.</li>
                     <li>Must plan at least one outing/ activity/ trip per semester.</li>
+                  </ul>
+                </p>
+                <p class="card-text mt-auto"><small class="text-muted">Last updated Jan 11, 2018</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Creative Director</h4>
+                <p class="card-text">
+                  <ul>
+                    <li>Take photos / videos at major events & upload to Google Drive.</li>
+                    <li>Work with the Fundraising and PR & SO to develop / create flyers for future events.</li>
+                    <li>Coordinate with club members to collect photos / media.</li>
+                    <li>Coordinate with PR & SO to upload photos to social media.</li>
+                    <li>Coordinate with the Webmaster to upload photos / videos to the website.</li>
+                    <li>Assist in the creation of any designs needed for club (membership cards, t-shirts, flyers, poster boards, etc).</li>
+                    <li>Maintain our club website and GrizzOrgs.</li>
+                    <li>Work alongside the Secretary to post upcoming events/a calendar and previous meeting summaries on the website and GrizzOrgs.</li>
+                    <li>Must plan at least one outing / activity / trip per semester.</li>
                   </ul>
                 </p>
                 <p class="card-text mt-auto"><small class="text-muted">Last updated Jan 11, 2018</small></p>
