@@ -5,7 +5,7 @@
 
   <div class="navbar-brand bg-dark border-dark"></div>
 
-  <ul class="nav navbar-nav d-md-down-none">
+  <ul class="nav navbar-nav d-md-down-none border-dark">
     <li class="nav-item px-3">
       <a class="nav-link @if ($page == 'www.outdooradventureclubatou.com') active @endif" href="\">Home</a>
     </li>
