@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <div class="card-deck mb-4">
+        <div class="card-columns mb-4">
           <div class="card ml-4 mr-4 text-white bg-dark">
             <div class="card-header">
               <h4 class="card-title m-0">Secretary</h4>
