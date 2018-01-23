@@ -39,64 +39,64 @@
 <body class="app header-fixed sidebar-hidden aside-menu-hidden" style="font-family: 'Cabin', sans-serif">
     @include ('layouts.nav')
     <div class="app-body">
-      <main class="main">
-        <div class="sidebar">
-          <nav class="sidebar-nav">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="main.html"><i class="icon-speedometer"></i> Home <span class="badge badge-primary">NEW</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Trips</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Members</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Gallery</a>
-              </li>
-              <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board</a>
-                <ul class="nav-dropdown-items">
-                  <li class="nav-item">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Current E-Board</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board Positions</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> FAQ's</a>
-              </li>
+      <div class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="main.html"><i class="icon-speedometer"></i> Home <span class="badge badge-primary">NEW</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Trips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Gallery</a>
+            </li>
+            <li class="nav-item nav-dropdown">
+              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item">
+                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Current E-Board</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> E-Board Positions</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> FAQ's</a>
+            </li>
 
-              <li class="nav-title">
-                Other
-              </li>
-              <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Admin</a>
-                <ul class="nav-dropdown-items">
-                  <li class="nav-item">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Members</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Trips</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage E-Board</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Gear</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-        </div>
-        @yield ('content')
+            <li class="nav-title">
+              Other
+            </li>
+            <li class="nav-item nav-dropdown">
+              <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Admin</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item">
+                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Members</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Trips</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage E-Board</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Manage Gear</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <button class="sidebar-minimizer brand-minimizer" type="button"></button>
       </div>
-    </main>
+      <main class="main">
+        @yield ('content')
+      </main>
+    </div>
     <!-- Bootstrap and necessary plugins -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
