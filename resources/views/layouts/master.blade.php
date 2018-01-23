@@ -36,7 +36,7 @@
 
 </head>
 
-<body class="app header-fixed sidebar-off-canvas aside-menu-hidden" style="font-family: 'Cabin', sans-serif">
+<body class="app header-fixed sidebar-hidden aside-menu-hidden" style="font-family: 'Cabin', sans-serif">
     @include ('layouts.nav')
     <div class="app-body">
       <main class="main">
