@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('content')
-  <body class="app d-flex flex-row align-items-center mt-10">
+  <body class="app d-flex flex-row align-items-center ">
     <div class="container">
       <div class="d-flex justify-content-center" style="flex-direction: column">
         <div class="row justify-content-center">
