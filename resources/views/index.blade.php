@@ -12,7 +12,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="d-flex justify-content-center">
-            <img class="d-block img-fluid" style="width:50vw;height:50vh;object-fit:contain;overflow:hidden;position:absolute;top:10vh" src="img/oac_white.png" alt="First slide">
+            <img class="d-block img-fluid" style="width:50vw;height:50vh;object-fit:contain;overflow:hidden;position:absolute;top:10vh" src="img/logo.png" alt="First slide">
           </div>
           <img class="d-block img-fluid" style="width:100vw;height:75vh;object-fit:cover;overflow:hidden;" src="img/trips/lake.jpg" alt="First slide">
         </div>
