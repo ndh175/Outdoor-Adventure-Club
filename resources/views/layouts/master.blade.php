@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="img/favicon.png">
   @php ($url_parts = explode('/', url()->current()))
   @php ($page = end($url_parts))
-  @if ($page == 'www.outdooradventureclubatou.com') <title>OAC - TEST</title> @endif
+  @if ($page == 'www.outdooradventureclubatou.com') <title>OAC - Home</title> @endif
   @if ($page == 'trips') <title>OAC - Trips</title> @endif
   @if ($page == 'members') <title>OAC - Members</title> @endif
   @if ($page == 'gear_rental') <title>OAC - Gear Rental</title> @endif
