@@ -18,7 +18,7 @@
         </div>
         <div class="carousel-item">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Nordhouse Dunes</h3>
+            <h3>Nordhouse Dunes TEST</h3>
             <p>This is a test description about this trip.</p>
           </div>
           <img class="d-block img-fluid" style="width:100vw;height:75vh;object-fit:cover;overflow:hidden;" src="img/trips/beach2.jpg" alt="First slide">
