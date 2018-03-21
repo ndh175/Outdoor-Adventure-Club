@@ -23,7 +23,7 @@
                     </div>
                     <div class="row">
                       <div class="col-6 form-group">
-                        <button type="button" class="btn btn-primary px-4" type="submit">Login</button>
+                        <button type="submit" class="btn btn-primary px-4">Login</button>
                       </div>
                       <div class="form-group col-6 text-right">
                         <button type="button" class="btn btn-link px-0">Forgot password?</button>
