@@ -42,7 +42,7 @@
     </div>
 
     <div class="card text-center text-white bg-dark m-4">
-      <h3 class="card-header">ABOUT Us</h3>
+      <h3 class="card-header">Test Us</h3>
       <div class="card-body">
         <p class="card-text">Outdoor Adventure Club is designed to bring together people who love alternative sports, outdoors, and adventure. Our vision is to be able to host and plan trips and activities involving the outdoors and nature. Whether you have never tried any of the latter, are looking to improve skills, or are a pro looking for some people on campus with similar interests. We'd love to have you come check us out! The group will be meeting bi-weekly to take trips, hangout (eat or games), watch movies, or have guests come to speak. All meetings will be based on the interest of the majority, means and provisions and of course weather/season.</p>
         <a href="/register" class="btn btn-lg btn-primary">Sign Up</a>
